@@ -12,8 +12,8 @@ import java.util.concurrent.*;
 import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 
-public class GraphqlTest extends AbstractAPI {
-  private static final Logger log = Logger.getLogger(GraphqlTest.class);
+public class ProdGraphqlTest extends AbstractAPI {
+  private static final Logger log = Logger.getLogger(ProdGraphqlTest.class);
   public static ResponseOptions<Response> response = null;
   private final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 

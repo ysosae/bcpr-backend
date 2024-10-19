@@ -10,6 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--        <maven.compiler.plugin.version>4.0.0-beta-1</maven.compiler.plugin.version>-->
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
         <maven-failsafe-plugin.version>3.0.0-M5</maven-failsafe-plugin.version>
@@ -48,6 +49,7 @@
         <slf4j-simple.version>1.6.4</slf4j-simple.version>
         <lombok.version>1.18.34</lombok.version>
         <testng.version>7.10.2</testng.version>
+        <!--        <testng.version>7.4.0</testng.version>-->
         <rest-assured-version>5.4.0</rest-assured-version>
         <allure-testng-version>2.18.1</allure-testng-version>
         <allure.maven.version>2.11.2</allure.maven.version>
@@ -85,6 +87,7 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
+            <!--            <version>7.4.0</version>-->
             <version>7.1.0</version>
             <scope>test</scope>
         </dependency>
@@ -536,10 +539,11 @@
                         <reportVersion>2.14.0</reportVersion>
                         <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
                     </systemPropertyVariables>
-                    <includes>
-                        <include>**/*TestRunner.java</include>
-                        <include>**/RunTest.java</include>
-                    </includes>
+                    <!--                    <includes>-->
+                    <!--&lt;!&ndash;                        <include>**/*TestRunner.java</include>&ndash;&gt;-->
+                    <!--&lt;!&ndash;                        <include>**/RunTest.java</include>&ndash;&gt;-->
+                    <!--                        <include>ProdGraphqlTest.java</include>-->
+                    <!--                    </includes>-->
                     <testFailureIgnore>true</testFailureIgnore>
                     <rerunFailingTestsCount>1</rerunFailingTestsCount>
                     <properties>
@@ -578,3 +582,4 @@
         </plugins>
     </build>
 </project>
+

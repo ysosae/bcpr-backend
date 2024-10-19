@@ -3,10 +3,9 @@
 <suite name="Default Suite">
     <test thread-count="5" name="bcpr-rest-api-automation-framework">
         <classes>
-            <class name="test.EnvBCPRTest">
+            <class name="test.ProdGraphqlTest">
                 <methods>
-                    <include name="testGetLambda"/>
-                    <include name="testValidateAllDynamoDBTable"/>
+                    <include name="executeLoginPRD"/>
                 </methods>
             </class> <!-- test.EnvBCPRTest -->
         </classes>
