@@ -11,7 +11,7 @@ import java.net.URISyntaxException;
 import java.util.concurrent.*;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Test;
-
+import org.testng.Assert;
 
 public class ProdGraphqlTest extends AbstractAPI {
   private static final Logger log = Logger.getLogger(ProdGraphqlTest.class);
@@ -46,6 +46,10 @@ public class ProdGraphqlTest extends AbstractAPI {
         log.error(e.getMessage());
       }
       log.info("Response Success:" + response.statusCode());
+      Assert.assertEquals(
+          response.statusCode(),
+          200,
+          "Fail Service Login with Status Code " + response.statusCode());
     } catch (NullPointerException e) {
       log.error("Path is invalid: " + e.getMessage());
     }
