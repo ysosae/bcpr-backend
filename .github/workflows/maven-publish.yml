@@ -21,4 +21,4 @@ jobs:
 
     - name: Run TestNG Test
       #run: mvn -B test -Dtest=test.GraphqlTest
-      run: mvn test -DsuiteXmlFile=testng.xml
+      run: mvn clean test -DsuiteXmlFile=testng.xml
