@@ -10,7 +10,8 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.concurrent.*;
 import org.apache.log4j.Logger;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
+
 
 public class ProdGraphqlTest extends AbstractAPI {
   private static final Logger log = Logger.getLogger(ProdGraphqlTest.class);

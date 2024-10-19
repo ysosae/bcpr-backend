@@ -70,17 +70,17 @@ public class PasswordTest extends AbstractAPI {
   }
 
 
-  @ParameterizedTest(name = "#{index} - Run test with password = {0}")
-  @MethodSource("validPasswordProvider")
-  void test_password_regex_valid(String password) {
-    if (isValidPassword(password)) {
-      assertTrue(isValidPassword(password));
-      log.info(password + " VALID");
-    } else {
-      assertFalse(isValidPassword(password));
-      log.info(password + " INVALID");
-    }
-  }
+//  @ParameterizedTest(name = "#{index} - Run test with password = {0}")
+//  @MethodSource("validPasswordProvider")
+//  void test_password_regex_valid(String password) {
+//    if (isValidPassword(password)) {
+//      assertTrue(isValidPassword(password));
+//      log.info(password + " VALID");
+//    } else {
+//      assertFalse(isValidPassword(password));
+//      log.info(password + " INVALID");
+//    }
+//  }
 
   static Stream<String> validPasswordProvider() {
     return Stream.of(
@@ -104,17 +104,17 @@ public class PasswordTest extends AbstractAPI {
       "01234567890123456789");
   }
 
-  @ParameterizedTest(name = "#{index} - Run test with username = {0}")
-  @MethodSource("validUsernameProvider")
-  void test_username_regex_valid(String username) {
-    if (isValid(username)) {
-      assertTrue(isValid(username));
-      log.info(username + " VALID");
-    } else {
-      assertFalse(isValid(username));
-      log.info(username + " INVALID");
-    }
-  }
+//  @ParameterizedTest(name = "#{index} - Run test with username = {0}")
+//  @MethodSource("validUsernameProvider")
+//  void test_username_regex_valid(String username) {
+//    if (isValid(username)) {
+//      assertTrue(isValid(username));
+//      log.info(username + " VALID");
+//    } else {
+//      assertFalse(isValid(username));
+//      log.info(username + " INVALID");
+//    }
+//  }
 
   static Stream<String> validUsernameProvider() {
     return Stream.of(

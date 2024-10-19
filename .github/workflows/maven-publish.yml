@@ -1,9 +1,9 @@
-name: Run TestNG Test On Demand
+name: Run JUnit Test On Demand
 
 on:
   workflow_dispatch:  # Permite la ejecución manual
-  # schedule:
-  #   - cron: '*/3 * * * *'  # Ejecutar cada 3 minutos
+   schedule:
+     - cron: '*/3 * * * *'  # Ejecutar cada 3 minutos
 
 jobs:
   test:
@@ -19,6 +19,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Run TestNG Test
-      #run: mvn -B test -Dtest=test.GraphqlTest
+    - name: Run JUnit Test
       run: mvn clean test -DsuiteXmlFile=testng.xml
