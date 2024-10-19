@@ -1,5 +1,6 @@
 name: Run JUnit Test Every 3 Minutes
 on:
+  workflow_dispatch:  # Permite la ejecución manual
   schedule:
     - cron: '*/3 * * * *'  # Ejecutar cada 3 minutos
 jobs:
