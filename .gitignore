@@ -1,0 +1,30 @@
+### IntelliJ IDEA ###
+/.idea/
+*.iml
+*.html
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.ipr
+
+#Allure
+allure-results/
+/target/
+/.allure/
+/*allure/
+/allure-results
+*ajcore*
+
+### Mac OS ###
+.DS_Store
+src/.DS_Store
+/*.DS_Store/
+
+### Kobiton ###
+kobiton-store*
+kobiton/
+
+### VS Code ###
+.vscode/
+
