@@ -1,0 +1,22 @@
+name: Run JUnit Test Every 3 Minutes
+
+on:
+  schedule:
+    - cron: '*/3 * * * *'  # Ejecutar cada 3 minutos
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Run JUnit Test
+      run: mvn -B test -Dtest=test.GraphqlTest
