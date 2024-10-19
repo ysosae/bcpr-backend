@@ -1,0 +1,1 @@
+{{Name: MOBILE_STORE_VERSION,}=MOBILE_STORE_VERSION is Present set on current lambda, {Name: MINIMUM_MOBILE_VERSION_ALLOW,}=MINIMUM_MOBILE_VERSION_ALLOW is Present set on current lambda}

@@ -1,0 +1,7 @@
+mutation {
+closeClaim(claimId: "$claimId")
+{
+    claimId
+    status
+}
+}

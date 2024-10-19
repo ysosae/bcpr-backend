@@ -1,0 +1,10 @@
+query {
+  refreshToken(
+    usersub: "$usersub"
+    token: "$token"
+  ) {
+    accessToken
+    idToken
+    refreshToken
+  }
+}

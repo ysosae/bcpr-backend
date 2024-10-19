@@ -1,0 +1,1 @@
+{{Name: USE_SQS_AS_NOTIFICATION_CHANNEL,Value: true}=USE_SQS_AS_NOTIFICATION_CHANNEL is not set on current lambda}

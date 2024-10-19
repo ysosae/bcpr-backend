@@ -1,0 +1,21 @@
+mutation {
+  enrollmentValidation(
+    userArgs: {
+      name: "JOSE"
+      lastName: "FONT"
+      socialSecurityNumber: "581135033"
+      customerType: "TAX_ID"
+      dateOfBirth: "1960-10-27"
+      mobilePhoneNumber: "7876548795"
+      email: "perficientclienttest@gmail.com"
+      financialInstitutionId: "659"
+      creditCardNumber: "5440206590088456"
+      expirationDate: "02/26"
+      cvv: "836"
+    }
+  ) {
+    status
+    expires
+    enrollmentId
+  }
+}

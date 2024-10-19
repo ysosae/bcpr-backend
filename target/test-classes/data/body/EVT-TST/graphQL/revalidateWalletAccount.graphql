@@ -1,0 +1,8 @@
+mutation {
+revalidateWalletAccount(accountId: "$accountId") {
+accountId
+expiration
+linkToken
+requestId
+}
+}

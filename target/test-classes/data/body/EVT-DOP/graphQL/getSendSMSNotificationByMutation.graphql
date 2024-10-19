@@ -1,0 +1,17 @@
+mutation {
+sendSMSNotification(smsNotificationDTO: {
+      country_code :"1"
+      cmdb_id : "BCPR"
+      phone: "219732983"
+      message: "DEV : Automation O1"
+    }){
+      response {
+        id
+      }
+      status {
+        code
+        msg
+      }
+
+    }
+}

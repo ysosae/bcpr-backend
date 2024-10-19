@@ -1,0 +1,9 @@
+{
+  "traceId": "$traceId",
+  "routeId": "VPL-PR",
+  "institutionId": "$institutionId",
+  "customerId": "$customerId",
+  "customerIdType": "$customerIdType",
+  "accountId": "$accountId",
+  "accountType": "CREDIT_CARD"
+}

@@ -1,0 +1,1 @@
+{{Name: ICON_IMAGE_DOMAIN,Value: https://d12vagw9664652.cloudfront.net}=https://images-bcpr-dev.evertecinc.com/ is not equals to https://d12vagw9664652.cloudfront.net expected [true] but found [false]}

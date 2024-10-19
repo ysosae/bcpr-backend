@@ -1,0 +1,15 @@
+mutation{
+   sendSMSNotification(smsNotificationDTO: {
+      country_code :"1"
+      cmdb_id : "BCPR"
+      phone: ""
+      message: "Hello"
+    }){
+
+      status {
+        code
+        msg
+      }
+
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "data": {
+    "listFaqsForRewards": [
+      {
+        "questionId": "19",
+        "question": "¿Qué es el programa de ReCoompensa?",
+        "answer": "Por cada dólar en compras o retiros en cajeros automáticos, usted acumula un (1) punto equivalente al 1% de la transacción. Ciertas restricciones aplican. Para obtener detalles del programa de ReCoompensa, comuníquese a su Cooperativa.\n \n El programa de puntos para el programa de tarjetas de crédito Mastercard® Business varía por Cooperativa.Para conocer el programa de puntos para su Mastercard® Business,\n comuníquese a su Cooperativa.",
+        "category": {
+          "categoryId": "4",
+          "description": "Recompensas"
+        }
+      },
+      {
+        "questionId": "20",
+        "question": "¿Cómo puedo redimir mis puntos ReCoompensa?",
+        "answer": "Los puntos en el Programa de ReCoompensa se redimen en efectivo. Para redimir sus puntos, necesita contactar un representante de su Cooperativa para que le oriente el proceso a seguir.",
+        "category": {
+          "categoryId": "4",
+          "description": "Recompensas"
+        }
+      }
+    ]
+  }
+}

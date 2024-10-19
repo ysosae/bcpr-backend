@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "listFaqsForRewards": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "required": [
+              "questionId",
+              "question",
+              "answer"
+            ],
+            "properties": {
+              "questionId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1
+              },
+              "answer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "category": {
+                "type": "object",
+                "properties": {
+                  "categoryId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "categoryId",
+                  "description"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "listFaqsForRewards"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

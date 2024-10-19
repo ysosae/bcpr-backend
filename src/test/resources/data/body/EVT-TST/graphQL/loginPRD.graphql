@@ -1,0 +1,7 @@
+query {
+  login(username: "ecordero29", password: "Bcpr!@#$%^&*()A2") {
+    accessToken
+    idToken
+    refreshToken
+  }
+}

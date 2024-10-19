@@ -1,0 +1,13 @@
+{
+  "data": {
+    "sendSMSNotification": {
+      "response": {
+        "id": "d786722a-3c16-4c41-8511-bf0c227f239f"
+      },
+      "status": {
+        "code": 200,
+        "msg": "OK"
+      }
+    }
+  }
+}

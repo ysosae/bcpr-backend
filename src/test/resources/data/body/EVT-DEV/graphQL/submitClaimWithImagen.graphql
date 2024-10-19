@@ -1,0 +1,18 @@
+mutation{
+submitClaim(
+    submitClaimArguments: {
+      claimTypeId: 3
+      cardId: "$encryptedCardId"
+      cardType: "$cardType"
+      transactionId: "$transactionId"
+      institutionId: "$institutionId"
+      claimInputs: [
+          { id: "5", value:"20.00"},
+          { id: "6", value:"$publicUrl"},
+          { id: "7", value: "Automation: Additional comments" }
+      ]
+    }
+  ) {
+    claimNumber
+  }
+}

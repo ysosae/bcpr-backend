@@ -1,0 +1,6 @@
+mutation {
+    updateWalletCustomName(accountId:"$accountIdPayments", customName:"$customName") {
+        accountId
+        status
+    }
+}

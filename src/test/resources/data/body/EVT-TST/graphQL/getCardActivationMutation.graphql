@@ -1,0 +1,15 @@
+mutation {
+    cardActivation(
+      cardArguments:{
+     institutionId: "$institutionId"
+     ssnLastFourDigits: "$ssnLastFourDigits"
+     lastEightDigits: "$lastEightDigits"
+     cardId: "$encryptedCardId"
+     expirationDate: "$expirationDate"
+      }
+   ){
+     status
+     message
+  }
+
+ }

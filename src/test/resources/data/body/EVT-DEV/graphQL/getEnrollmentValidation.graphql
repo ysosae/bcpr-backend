@@ -1,0 +1,21 @@
+mutation {
+enrollmentValidation(userArgs:
+    {
+       name: "$name",
+       lastName: "$lastName",
+       socialSecurityNumber: "$customerId",
+       customerType: "$customerIdType",
+       dateOfBirth:"$dateOfBirth",
+       mobilePhoneNumber: "$phone",
+       email: "$email",
+       financialInstitutionId: "$institutionId",
+       creditCardNumber: "$creditCardNumber",
+       expirationDate: "$expirationDate",
+       cvv: "$CVV"
+    })
+  {
+   status
+   expires
+   enrollmentId
+  }
+}

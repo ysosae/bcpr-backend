@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "confirmWalletAccount": {
+          "type": "object",
+          "properties": {
+            "accountId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "accountId",
+            "status"
+          ]
+        }
+      },
+      "required": [
+        "confirmWalletAccount"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "sendSMSNotification": {
+          "type": "object",
+          "properties": {
+            "response": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id"
+              ]
+            },
+            "status": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "number"
+                },
+                "msg": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "code",
+                "msg"
+              ]
+            }
+          },
+          "required": [
+            "response",
+            "status"
+          ]
+        }
+      },
+      "required": [
+        "sendSMSNotification"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

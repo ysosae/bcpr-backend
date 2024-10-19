@@ -1,0 +1,12 @@
+mutation {
+  sendLoggedContactUsRequest(
+    conctactUsData: {
+      institutionId:"636"
+      reason: "QA simple reason"
+      message: "this is a massage"
+    }
+  ) {
+    code
+    message
+  }
+}

@@ -1,0 +1,11 @@
+mutation {
+  regainAccessCodeValidation(
+    input: {
+      phoneCode: $phoneCode
+      regainAccessId: "$regainAccessId"
+    }
+  ) {
+    username
+    status
+  }
+}

@@ -1,0 +1,1 @@
+{"uuid":"226cffe2-143e-43f1-a754-c162af871f18","name":"BCPRXRP-394-User perform graphql log-in with generic when not exist user into Cognito","children":["63f7a981-c447-414f-b225-12201d243385"],"befores":[],"afters":[],"start":1724191938211,"stop":1724191940647}

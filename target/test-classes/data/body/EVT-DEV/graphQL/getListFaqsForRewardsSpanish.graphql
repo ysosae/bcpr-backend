@@ -1,0 +1,11 @@
+{
+    listFaqsForRewards{
+        questionId
+        question
+        answer
+        category{
+            categoryId
+            description
+        }
+    }
+}

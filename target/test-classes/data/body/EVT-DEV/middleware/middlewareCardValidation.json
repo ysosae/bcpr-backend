@@ -1,0 +1,11 @@
+{
+  "traceId": "$traceId",
+  "routeId": "$routeId",
+  "institutionId": "$institutionId",
+  "customerId": "$customerId",
+  "customerIdType": "$customerIdType",
+  "cardId": "$cardId",
+  "cardType": "$cardType",
+  "cardExpirationDate": "$cardExpirationDate",
+  "cardSecurityCode": "$cardSecurityCode"
+}

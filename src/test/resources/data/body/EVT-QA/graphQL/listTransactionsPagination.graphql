@@ -1,0 +1,26 @@
+query {
+listTransactions(
+     institutionId: "$institutionId",
+     cardId: "$encryptedCardId",
+     limit: $limit,
+     offset: $offset,
+     fromDate: "$fromDate",
+     toDate: "$toDate"
+    ){
+    offset
+    quantity
+    transactions {
+      id
+      amount
+      currency
+      date
+      category {
+        code
+        description
+      }
+      type
+      claimNumber
+      description
+    }
+  }
+}

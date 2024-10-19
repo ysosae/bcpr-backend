@@ -1,0 +1,6 @@
+{
+  "traceId": "$traceId",
+  "routeId": "$routeId",
+  "customerId": "$customerId",
+  "customerIdType": "$customerIdType"
+}

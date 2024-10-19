@@ -1,0 +1,6 @@
+mutation {
+  enrollUser(enrollArgs: { enrollmentId: "89315415-57e7-4bba-834e-c508ea520367", username: "Yalithza123", password: "Test12345" }) {
+    enrollmentId
+    status
+  }
+}

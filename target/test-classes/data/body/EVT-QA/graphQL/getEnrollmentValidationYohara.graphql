@@ -1,0 +1,21 @@
+mutation {
+enrollmentValidation(userArgs:
+    {
+       name: "YOHARA",
+       lastName: "SANTANA",
+       socialSecurityNumber: "145540014",
+       customerType: "SSN",
+       dateOfBirth:"1941-04-23",
+       mobilePhoneNumber: "7872345890",
+       email: "perficientclienttest@gmail.com",
+       financialInstitutionId: "636",
+       creditCardNumber: "5440206360000160",
+       expirationDate: "02/26",
+       cvv: "235"
+    })
+  {
+   status
+   expires
+   enrollmentId
+  }
+}

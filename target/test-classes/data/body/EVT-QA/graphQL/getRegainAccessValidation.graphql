@@ -1,0 +1,19 @@
+mutation {
+  regainAccessValidation(
+    regainAccessData: {
+      socialSecurityNumber: "$customerId"
+      customerType: "$customerIdType"
+      dateOfBirth: "$dateOfBirth"
+      mobilePhoneNumber: "$phone"
+      email: "$email"
+      financialInstitutionId: "$institutionId"
+      creditCardNumber: "$creditCardNumber"
+      expirationDate: "$expirationDate"
+      cvv: "$CVV"
+    }
+  ) {
+    status
+    expires
+    regainAccessId
+  }
+}

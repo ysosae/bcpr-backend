@@ -1,0 +1,20 @@
+query{
+    getProfile{
+        userName
+        name
+        lastname
+        phoneNumber
+        email
+        callCenterPhoneNumbers{
+            institutionId
+            institutionName
+            icon
+            callCenterOptions{
+                description
+                phoneNumber
+                schedule
+                email
+            }
+        }
+    }
+}

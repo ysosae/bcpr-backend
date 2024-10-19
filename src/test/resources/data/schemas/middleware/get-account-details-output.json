@@ -1,0 +1,40 @@
+{   "$id": "https://bancoop.com/schemas/get-account-details.response.schema.json",
+  "type": "object",
+  "title": "Get Account Details - Response",
+  "description": "The response payload structure for the 'GetAccountDetails' service.",
+  "properties": {
+    "traceId": {
+      "type": "string",
+      "description": "A UUID string used for tracing purposes.",
+      "$ref": "middleware.schema.json#/definitions/traceId"
+    },
+    "data": {
+      "type": "object",
+      "$ref": "middleware.schema.json#/definitions/creditCardDetailsObject"
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "$ref": "middleware.schema.json#/definitions/error"
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "traceId"
+  ],
+  "anyOf": [{
+    "required": [
+      "data"
+    ]
+  },
+    {
+      "required": [
+        "errors"
+      ]
+    }
+  ]
+}

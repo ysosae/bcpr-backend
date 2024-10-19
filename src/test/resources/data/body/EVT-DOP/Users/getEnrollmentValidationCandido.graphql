@@ -1,0 +1,21 @@
+mutation {
+  enrollmentValidation(
+    userArgs: {
+      name: "CANDIDO"
+      lastName: "RIVERA"
+      socialSecurityNumber: "660458776"
+      customerType: "SSN"
+      dateOfBirth: "1948-04-20"
+      mobilePhoneNumber: "7875891234"
+      email: "pruebasbcpr34@yahoo.com"
+      financialInstitutionId: "648"
+      creditCardNumber: "5560396485088317"
+      expirationDate: "05/26"
+      cvv: "869"
+    }
+  ) {
+    status
+    expires
+    enrollmentId
+  }
+}

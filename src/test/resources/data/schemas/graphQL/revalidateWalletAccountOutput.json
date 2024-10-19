@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "revalidateWalletAccount": {
+          "type": "object",
+          "properties": {
+            "accountId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "expiration": {
+              "type": "string",
+              "minLength": 1
+            },
+            "linkToken": {
+              "type": "string",
+              "minLength": 1
+            },
+            "requestId": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "accountId",
+            "expiration",
+            "linkToken",
+            "requestId"
+          ]
+        }
+      },
+      "required": [
+        "revalidateWalletAccount"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

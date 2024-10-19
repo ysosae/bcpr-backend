@@ -1,0 +1,15 @@
+mutation {
+addWalletAccount(wallet:
+    {
+     routing: "$routing",
+     accountNumber: "$accountNumber",
+     accType: "$accType",
+     customName: "$customName"
+    })
+  {
+    accountId
+    expiration
+    linkToken
+    requestId
+  }
+}

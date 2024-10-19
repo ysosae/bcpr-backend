@@ -1,0 +1,12 @@
+{
+    listCallCenters{
+        institutionId
+        institutionName
+        icon
+        callCenterOptions{
+            description
+            phoneNumber
+            schedule
+        }
+    }
+}

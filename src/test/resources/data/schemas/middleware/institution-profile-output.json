@@ -1,0 +1,91 @@
+{   "$id": "https://bancoop.com/schemas/institutions-profile.response.schema.json",
+  "title": "Institution profile - Response",
+  "description": "The response payload structure definition for the 'InstitutionProfile' service.",
+  "type": "object",
+  "properties": {
+    "traceId": {
+      "type": "string",
+      "description": "",
+      "$ref": "middleware.schema.json#/definitions/traceId"
+    },
+    "data": {
+      "required": [
+        "object",
+        "institutionId",
+        "institutionName",
+        "phoneNumber",
+        "addresses",
+        "implementedServices"
+      ],
+      "type": "object",
+      "properties": {
+        "object": {
+          "type": "string",
+          "$ref": "middleware.schema.json#/definitions/objectType"
+        },
+        "institutionId": {
+          "type": "string",
+          "description": "A unique number representing the institution.",
+          "$ref": "middleware.schema.json#/definitions/institutionId"
+        },
+        "institutionName": {
+          "type": "string",
+          "description": "A unique name description, representing the banking institution.",
+          "$ref": "middleware.schema.json#/definitions/institutionName"
+        },
+        "routingNumber": {
+          "type": "string",
+          "description": "A exclusive identification number assigned to the banking institution.",
+          "pattern": "^[0-9]{7,14}$"
+        },
+        "phoneNumber": {
+          "type": "string",
+          "description": "E.164 format phone number.",
+          "$ref": "middleware.schema.json#/definitions/phoneNumber"
+        },
+        "email": {
+          "type": "string",
+          "description": "The institution email",
+          "$ref": "middleware.schema.json#/definitions/email"
+        },
+        "addresses": {
+          "type": "array",
+          "additionalItems": true,
+          "items": {
+            "type": "object",
+            "$ref": "middleware.schema.json#/definitions/address"
+          }
+        },
+        "implementedServices": {
+          "type": "array",
+          "description": "The list of available services for the institution.",
+          "$ref": "middleware.schema.json#/definitions/implementedServices"
+        }
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "$ref": "middleware.schema.json#/definitions/error"
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "traceId"
+  ],
+  "anyOf": [{
+    "required": [
+      "data"
+    ]
+  },
+    {
+      "required": [
+        "errors"
+      ]
+    }
+  ]
+}

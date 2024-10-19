@@ -1,0 +1,10 @@
+{
+  "traceId": "$traceId",
+  "routeId": "$routeId",
+  "institutionId":"$institutionId",
+  "transactionId": "$transactionId",
+  "customerId":"$customerId",
+  "customerIdType": "$customerIdType",
+  "accountId":"$accountId",
+  "accountType":"$accountType"
+}

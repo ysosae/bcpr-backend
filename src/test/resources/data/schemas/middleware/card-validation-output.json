@@ -1,0 +1,56 @@
+{   "$id": "https://bancoop.com/schemas/card-validation.response.schema.json",
+  "type": "object",
+  "title": "Card Temporary Lock - Response",
+  "description": "The response payload structure for the 'CardTemporaryLock' service.",
+  "properties": {
+    "traceId": {
+      "type": "string",
+      "description": "A UUID string used for tracing purposes.",
+      "$ref": "middleware.schema.json#/definitions/traceId"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "description": "Description about the result"
+        },
+        "status": {
+          "description": "Status of the action",
+          "type": "string",
+          "enum": [
+            "SUCCESS"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "message"
+      ]
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "$ref": "middleware.schema.json#/definitions/error"
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "traceId"
+  ],
+  "anyOf": [{
+    "required": [
+      "data"
+    ]
+  },
+    {
+      "required": [
+        "errors"
+      ]
+    }
+  ]
+}

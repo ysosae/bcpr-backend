@@ -1,0 +1,186 @@
+{
+  "data": {
+    "listFAQS": [
+      {
+        "questionId": "1",
+        "question": "What does it mean to activate my credit card? ",
+        "answer": "When you receive your card, it is deactivated. This is to prevent someone other than you from accessing and using the card. You need to activate it to start making transactions.",
+        "category": {
+          "categoryId": "1",
+          "description": "About my credit card"
+        }
+      },
+      {
+        "questionId": "2",
+        "question": "What information do I need to know to activate my card?",
+        "answer": "To activate your card using  Mi Tarjeta Coop®, you need:\n\n1. The 16 digits of the card\n2. The expiration dates\n3. Last 4 social security numbers.",
+        "category": {
+          "categoryId": "1",
+          "description": "About my credit card"
+        }
+      },
+      {
+        "questionId": "3",
+        "question": "What other mechanism can I use to activate my card?",
+        "answer": "In addition to activating the card using the Mi Tarjeta Coop® APP, you can activate your card by calling our automated system at 787-281-8444. This service is available 24/7.\n\n\n You can also contact a representative of your Credit Union.",
+        "category": {
+          "categoryId": "1",
+          "description": "About my credit card"
+        }
+      },
+      {
+        "questionId": "4",
+        "question": "I forgot the user ID or password",
+        "answer": "No problem, just follow the link \"\n\n Need help with your username and / or password \" and that's it. You will need to have the social security number, identify if the account is personal or business, the date of birth, mobile phone number and email. In addition, you need to identify the cooperative that issues the card, card number, expiration date and the three digits that are on the back of the card (CVV)\n Once you enter the data,\n  Mi Tarjeta Coop® will send a code to your mobile phone that must be entered into the app.Once the process is completed,\n  Mi Tarjeta Coop® will provide you with the user registered in the app or allow you to change your password.",
+        "category": {
+          "categoryId": "1",
+          "description": "About my credit card"
+        }
+      },
+      {
+        "questionId": "5",
+        "question": "With this application can I also see the debit cards that I have in the cooperative?",
+        "answer": "No.  Mi Tarjeta Coop® contains only the information of the MasterCard® or VISA® credit cards. The debit card is a card whose funds come from a checking or savings account. To access your checking or savings account information, you need to contact your Credit Union or access your Credit Union's online banking application.",
+        "category": {
+          "categoryId": "1",
+          "description": "About my credit card"
+        }
+      },
+      {
+        "questionId": "6",
+        "question": "What does it mean to temporarily block or unblock my card?",
+        "answer": "Temporarily blocking your card means that you have disabled the ability of your\n card to process transactions at points of sale,\n shops and / or ATMs.Without\n However,\n recurring transactions, such as subscriptions or automatic payments,\n will continue to process without interruption while the card is disabled.\n \nPlease note that your card may also be disabled or blocked by the issuing Credit Union.Some reasons may be due to late payments or security measures related to fraud monitoring and prevention.For more information, contact your Credit Union.",
+        "category": {
+          "categoryId": "2",
+          "description": "Block my card"
+        }
+      },
+      {
+        "questionId": "7",
+        "question": "Why should I temporarily block my credit card?",
+        "answer": "You should use the temporary block option if you identify unauthorized transactions made with your card or if you receive an email or text message informing you that an unauthorized transaction was made by you. You can also use this option if you lose your card, even temporarily.\n \n The option to block the card allows you to protect it immediately,\n until you can determine what happened.If you cannot find it or you receive charges\n for unauthorized transactions,\n then you must report the card as lost,\n stolen or compromised,by calling 787 - 641 - 2310 or your Credit Union.You can also contact a service representative via e - mail at: mi Tarjetacoop @bancoop.com.\n \n Similarly,if there is a card that you do not use on a recurring basis,it is a good practice to block it until it is time to use it.",
+        "category": {
+          "categoryId": "2",
+          "description": "Block my card"
+        }
+      },
+      {
+        "questionId": "8",
+        "question": "Does temporary card blocking really work instantly?",
+        "answer": "Yes, you can instantly lock and unlock your card.",
+        "category": {
+          "categoryId": "2",
+          "description": "Block my card"
+        }
+      },
+      {
+        "questionId": "9",
+        "question": "If I have more than one card in my account and I select a temporary block for one of them\n Can I still use my other cards?",
+        "answer": "The answer in this case is, it depends. If you have more than one card and they are issued by different cooperatives, when you block a card, this block does not affect the cards issued by other cooperatives. Similarly, if you have cards with different logos, Mastercard® or VISA®, if you block a card with a logo, for example Mastercard®, this will not affect the card with the VISA® logo, and vice versa.\n \n However,\n if you have more than one personal credit card issued under the same account number,\n even\n if they are issued under different names,\n once you block your card,\n all credit cards within the same account will be temporarily blocked.\n \n For Business credit cards,\n you can disable or block each card within the same account individually.",
+        "category": {
+          "categoryId": "2",
+          "description": "Block my card"
+        }
+      },
+      {
+        "questionId": "10",
+        "question": "Can a temporary block to a card affect my other cards in other cooperatives?\n of credit?",
+        "answer": "No. The TEMPORARY BLOCKING of the card is based on the account or card number. Each\n card has a different account number,\n therefore,\n the TEMPORARY BLOCK will be placed only on the card of your choice.",
+        "category": {
+          "categoryId": "2",
+          "description": "Block my card"
+        }
+      },
+      {
+        "questionId": "11",
+        "question": "How long can the temporary card block last?",
+        "answer": "As long as you keep the lock option on the app. Only you can block and\n unlock your card.",
+        "category": {
+          "categoryId": "2",
+          "description": "Block my card"
+        }
+      },
+      {
+        "questionId": "12",
+        "question": "If my card is lost or stolen, should I temporarily block it?",
+        "answer": "If your card was stolen, lost or lost, you must first block your card and immediately contact 787-641-2310 or a representative of your Credit Union. This will protect you from unauthorized transactions while you apply for a new card.\n \n If your card was lost / stolen and you do not report it immediately, you will not be able to claim any\n transaction that was not made or authorized by you or an authorized user.Please close your card immediately.",
+        "category": {
+          "categoryId": "2",
+          "description": "Block my card"
+        }
+      },
+      {
+        "questionId": "13",
+        "question": "What is dispute a transaction?",
+        "answer": "A dispute is a claim for a refund of a payment made or charged to your card.\n \n There are multiple reasons why you can dispute a transaction.Here are some examples.\n \n 1. The statement reflects a transaction that was not authorized by me or the persons authorized on my credit card account.\n 2. You received the defective merchandise or you did not receive the merchandise paid\n for with your credit card.\n 3. You made the payment using another payment method\n 4. Canceled reservations,\n complying with the requirements of the business,\n however,\n they still made the charge.\n \n For all the reasons why you could dispute a transaction or charge,\n contact your Credit Union.",
+        "category": {
+          "categoryId": "3",
+          "description": "Transaction and claims"
+        }
+      },
+      {
+        "questionId": "14",
+        "question": "How can I pay my credit card?",
+        "answer": "You can make payment to your MasterCard® or VISA® credit card using  Mi Tarjeta Coop®. You only need to register the account of your financial institution in the APP and set the amount and date of the payment you want to make. An automatic debit will be processed to your account.",
+        "category": {
+          "categoryId": "3",
+          "description": "Transaction and claims"
+        }
+      },
+      {
+        "questionId": "15",
+        "question": "How long does it take to credit my payment to my account?",
+        "answer": "Payments made through  Mi Tarjeta Coop® will be reflected in your account within the next 3 business days.",
+        "category": {
+          "categoryId": "3",
+          "description": "Transaction and claims"
+        }
+      },
+      {
+        "questionId": "16",
+        "question": "What happens if I pay my credit card late?",
+        "answer": "If you do not make the card payment on the date established in the account statement, your card will be automatically blocked for non-payment.",
+        "category": {
+          "categoryId": "3",
+          "description": "Transaction and claims"
+        }
+      },
+      {
+        "questionId": "17",
+        "question": "What are the terms and conditions of my credit card?",
+        "answer": "The terms and conditions vary in each Credit Union. For specific details on\n the terms and conditions,\n please contact an authorized representative of your Credit Union",
+        "category": {
+          "categoryId": "3",
+          "description": "Transaction and claims"
+        }
+      },
+      {
+        "questionId": "18",
+        "question": "Is there a representative I can contact\n if I need assistance ?",
+        "answer": "If you need additional assistance, you can contact a Mi Tarjeta Coop service representative at 787-641-2310 or via email at: mi Tarjetacoop@bancoop.com",
+        "category": {
+          "categoryId": "3",
+          "description": "Transaction and claims"
+        }
+      },
+      {
+        "questionId": "19",
+        "question": "What is the ReCoompensa program?",
+        "answer": "For every dollar spent on purchases or ATM withdrawals, you earn one (1) point equal to 1% of the transaction. Certain restrictions apply. For details of the ReCoompensa program, contact your Credit Union.\n \n The points program\n for the Mastercard® Business credit card program varies by Credit Union.To learn about the points program for your MasterCard® Business, contact your Credit Union.",
+        "category": {
+          "categoryId": "4",
+          "description": "Rewards"
+        }
+      },
+      {
+        "questionId": "20",
+        "question": "How can I redeem my ReCoompensa points?",
+        "answer": "Points in the ReCoompensa Program are redeemed for cash. To redeem your points, You need to contact a representative of your Credit Union to guide you through the process to follow.",
+        "category": {
+          "categoryId": "4",
+          "description": "Rewards"
+        }
+      }
+    ]
+  }
+}

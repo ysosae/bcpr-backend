@@ -1,0 +1,10 @@
+query{
+  listWalletAccounts{
+  accountId
+  routing
+  lastFourDigitsAccountNumber
+  accType
+  customName
+  status
+  }
+}

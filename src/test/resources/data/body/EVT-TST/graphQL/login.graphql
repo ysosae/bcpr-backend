@@ -1,0 +1,1 @@
+query{login(username: "$USERNAME", password: "$PASSWORD"){accessToken idToken refreshToken validUserSessionTimeInSeconds maxAllowedInactivityInSeconds}}

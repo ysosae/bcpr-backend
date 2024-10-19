@@ -1,0 +1,46 @@
+{
+    "$schema": "https://bancoop.com/schemas/middleware/schema",
+    "$id": "https://bancoop.com/schemas/list-institution-status.response.schema.json",
+    "description": "The response payload structure definition for the 'ListInstitutionStatus' service.",
+    "title": "List Institution Status - Response",
+    "type": "object",
+    "properties": {
+        "traceId": {
+            "type": "string",
+            "description": "A UUID string used for tracing purposes.",
+            "$ref": "middleware.schema.json#/definitions/traceId"
+        },
+        "data": {
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "type": "object",
+                "$ref": "middleware.schema.json#/definitions/institutionStatusObject"
+            }
+        },
+        "errors": {
+            "type": "array",
+            "items": {
+                "$ref": "middleware.schema.json#/definitions/error"
+            }
+        },
+        "$schema": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "traceId"
+    ],
+    "anyOf": [{
+        "required": [
+            "data"
+        ]
+    },
+        {
+            "required": [
+                "errors"
+            ]
+        }
+    ]
+}

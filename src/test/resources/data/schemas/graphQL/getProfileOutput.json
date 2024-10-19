@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "getProfile": {
+          "type": "object",
+          "properties": {
+            "userName": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "lastname": {
+              "type": "string"
+            },
+            "phoneNumber": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "callCenterPhoneNumbers": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "institutionId": {
+                      "type": "string"
+                    },
+                    "institutionName": {
+                      "type": "string"
+                    },
+                    "callCenterOptions": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "description": {
+                              "type": "string"
+                            },
+                            "phoneNumber": {
+                              "type": "string"
+                            },
+                            "schedule": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "description",
+                            "phoneNumber",
+                            "schedule"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "institutionId",
+                    "institutionName",
+                    "callCenterOptions"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "userName",
+            "name",
+            "lastname",
+            "phoneNumber",
+            "email",
+            "callCenterPhoneNumbers"
+          ]
+        }
+      },
+      "required": [
+        "getProfile"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

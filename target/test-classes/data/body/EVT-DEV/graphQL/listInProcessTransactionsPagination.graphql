@@ -1,0 +1,24 @@
+query {
+  listInProcessTransactions(
+    institutionId: "$institutionId"
+    cardId: "$encryptedCardId"
+    limit: $limit
+    offset: $offset
+  ) {
+    offset
+    quantity
+    transactions {
+      id
+      amount
+      currency
+      description
+      type
+      category {
+        code
+        description
+      }
+      date
+      claimNumber
+    }
+  }
+}

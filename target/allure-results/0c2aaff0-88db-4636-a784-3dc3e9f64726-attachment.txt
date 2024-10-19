@@ -1,0 +1,1 @@
+{{Name: MINIMUM_MOBILE_VERSION_ALLOW,Value: Version:1.0.5}=MINIMUM_MOBILE_VERSION_ALLOW is not set on current lambda, {Name: MOBILE_STORE_VERSION,Value: Version:1.8.0}=MOBILE_STORE_VERSION is not set on current lambda}

@@ -1,0 +1,17 @@
+mutation {
+sendSMSNotification(smsNotificationDTO: {
+      country_code :"1"
+      cmdb_id : "BCPR#"
+      phone: "9851532"
+      message: "Test QA Microservicio"
+    }){
+      response {
+        id
+      }
+      status {
+        code
+        msg
+      }
+
+    }
+}

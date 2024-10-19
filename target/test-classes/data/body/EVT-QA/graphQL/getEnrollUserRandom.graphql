@@ -1,0 +1,6 @@
+mutation {
+  enrollUser(enrollArgs: { enrollmentId: "$enrollmentId", username: "$Username", password: "$Password" }) {
+    enrollmentId
+    status
+  }
+}

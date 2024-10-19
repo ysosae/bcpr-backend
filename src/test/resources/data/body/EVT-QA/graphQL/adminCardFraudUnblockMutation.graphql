@@ -1,0 +1,11 @@
+mutation {
+   adminCardFraudUnblock(
+     cardFraudUnblockArgs: {
+       institutionId: "$institutionId"
+       cardId: "$encryptedCardId"
+     }
+   ) {
+     message
+     status
+   }
+ }

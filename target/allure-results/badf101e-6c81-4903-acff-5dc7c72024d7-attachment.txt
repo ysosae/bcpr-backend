@@ -1,0 +1,1 @@
+{{Name: VALID_USER_SESSION_TIME_SECONDS,Value: 180}=420 is not equals to 180 expected [true] but found [false], {Name: ICON_IMAGE_DOMAIN,Value: https://d12vagw9664652.cloudfront.net}=https://images-bcpr-dev.evertecinc.com/ is not equals to https://d12vagw9664652.cloudfront.net expected [true] but found [false]}

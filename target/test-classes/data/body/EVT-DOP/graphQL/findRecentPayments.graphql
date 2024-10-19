@@ -1,0 +1,8 @@
+query{
+  findRecentPayments{
+    lastFourDigits
+    amount
+    date
+    status
+  }
+}

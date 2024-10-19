@@ -1,0 +1,21 @@
+query{
+listClaimTypes{
+id
+title
+description
+isCardLockedByFraud
+details {
+type
+order
+isRequired
+placeholder
+maxLength
+isMoreInfo
+id
+title
+resumenLabel
+options
+}
+
+}
+}

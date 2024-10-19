@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "makePayment": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string",
+              "minLength": 1
+            },
+            "message": {
+              "type": "string",
+              "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "code",
+            "message",
+            "id"
+          ]
+        }
+      },
+      "required": [
+        "makePayment"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

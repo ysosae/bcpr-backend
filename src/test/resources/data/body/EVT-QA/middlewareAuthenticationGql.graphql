@@ -1,0 +1,9 @@
+query {login(
+username: $username,
+password: $password
+){
+accessToken
+idToken
+refreshToken
+}
+}

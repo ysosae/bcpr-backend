@@ -1,0 +1,11 @@
+{
+    listFAQS{
+        questionId
+        question
+        answer
+        category{
+            categoryId
+            description
+        }
+    }
+}

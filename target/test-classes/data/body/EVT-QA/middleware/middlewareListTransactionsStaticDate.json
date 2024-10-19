@@ -1,0 +1,14 @@
+{
+  "traceId": "$traceId",
+  "routeId": "VPL-PR",
+  "institutionId": "$institutionId",
+  "customerId": "$customerId",
+  "customerIdType": "$customerIdType",
+  "accountId": "$accountId",
+  "accountType":"$accountType",
+  "fromDate":"$fromDate",
+  "toDate":"$toDate",
+  "limit":20,
+  "offset":0
+
+}

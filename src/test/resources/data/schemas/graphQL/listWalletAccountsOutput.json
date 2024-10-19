@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "listWalletAccounts": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "required": [
+              "accountId",
+              "routing",
+              "lastFourDigitsAccountNumber",
+              "accType",
+              "customName",
+              "status"
+            ],
+            "properties": {
+              "accountId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "routing": {
+                "type": "string",
+                "minLength": 1
+              },
+              "accountNumber": {
+                "type": "string",
+                "minLength": 1
+              },
+              "accType": {
+                "type": "string",
+                "minLength": 1
+              },
+              "customName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "listWalletAccounts"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

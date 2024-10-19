@@ -1,0 +1,1173 @@
+{
+  "Automation2023": {
+    "date": "$WeekAgo",
+    "login_app": [
+      "Automation2023",
+      "Test**1234567890"
+    ],
+    "lastName": "CATALA",
+    "sub": "23c37d4b-61f4-42d2-9ec2-341073ca5cec",
+    "CVV": "552",
+    "secondCardFourDigits": "",
+    "description": "Automation 01",
+    "isCardActive": true,
+    "login": [
+      "Automation2023",
+      "Test**1234567890"
+    ],
+    "type": "$TypeOperation",
+    "cardsQuantity": 5,
+    "lastEightDigits": "00725436",
+    "routing": "110000000",
+    "routeId": "VPL-PR",
+    "cardSecurityCode": "552",
+    "customerId": "584274000",
+    "customerIdType": "SSN",
+    "accType": "s",
+    "email": "perficientclienttest@gmail.com",
+    "expirationDate": "08/26",
+    "traceId": "0a6baba2-a7eb-4069-b6dc-1192d22c0718",
+    "cardData": [
+      {
+        "id": "U2FsdGVkX1+PK8zFVX0aUWzSVbK6PjAt6phRjuz+0rwwJavO19UrLhx+rgsGqAdl",
+        "institution": {
+          "institutionId": "614",
+          "institutionName": "COOP DE A/C DE LARES",
+          "phoneNumber": "787-897-2740",
+          "email": "mtomassini@larcoop.com",
+          "addresses": [
+            {
+              "address1": "APARTADO",
+              "address2": "",
+              "city": "LARES, P. R. 00669",
+              "country": "PR",
+              "postalCode": "00669"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "MASTERCARD",
+        "last4Digits": "6636",
+        "creditLimit": 2000,
+        "currentBalance": 1995.57,
+        "availableCredit": 4.43,
+        "minimumPaymentDueAmount": 0,
+        "paymentDueDate": "2023-09-06",
+        "embossedName": "LUCY CATALA PRATTS",
+        "productType": {
+          "code": "510",
+          "description": "MASTERCARD REGULAR"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 4273,
+          "canRedeemPoints": true,
+          "moneyPoints": 40
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 100,
+        "currentDate": {
+          "to": "2023-09-09",
+          "from": "2023-08-09"
+        },
+        "previousDate": {
+          "to": "2023-08-09",
+          "from": "2023-07-09"
+        },
+        "lastDate": {
+          "to": "2023-07-09",
+          "from": "2023-06-09"
+        }
+      },
+      {
+        "id": "U2FsdGVkX19qYV5YEaNb4tvS5CuUhkXL31fzavpX7ab42svcW7qx/4Ti1Ql9SZiA",
+        "institution": {
+          "institutionId": "662",
+          "institutionName": "COOPERATIVA A/C VEGA ALTA",
+          "phoneNumber": "787-883-4360",
+          "email": "joquendo@vegacoop.com",
+          "addresses": [
+            {
+              "address1": "APARTADO",
+              "address2": "",
+              "city": "VEGA ALTA,PR 00692",
+              "country": "PR",
+              "postalCode": "00692"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "MASTERCARD",
+        "last4Digits": "5408",
+        "creditLimit": 2504,
+        "currentBalance": 2119.53,
+        "availableCredit": 384.47,
+        "minimumPaymentDueAmount": 0,
+        "paymentDueDate": "2023-09-06",
+        "embossedName": "ARLENE ESTEVES",
+        "productType": {
+          "code": "510",
+          "description": "MASTERCARD REGULAR"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 9854,
+          "canRedeemPoints": true,
+          "moneyPoints": 90
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 100,
+        "currentDate": {
+          "to": "2023-09-09",
+          "from": "2023-08-09"
+        },
+        "previousDate": {
+          "to": "2023-08-09",
+          "from": "2023-07-09"
+        },
+        "lastDate": {
+          "to": "2023-07-09",
+          "from": "2023-06-09"
+        }
+      },
+      {
+        "id": "U2FsdGVkX18Rry2z0kG8stG7ZjmbtvDjAlP4LQ8oPyj7kko89C/dWoVtpPi6rhIB",
+        "institution": {
+          "institutionId": "677",
+          "institutionName": "COOPERATIVA A/C VILLA COOP",
+          "phoneNumber": "787-847-5640",
+          "email": "emaldonado@villa-coop.com",
+          "addresses": [
+            {
+              "address1": "APTDO",
+              "address2": "",
+              "city": "VILLALBA, PR 00766",
+              "country": "PR",
+              "postalCode": "00766"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "MASTERCARD",
+        "last4Digits": "3673",
+        "creditLimit": 3000,
+        "currentBalance": 118.89,
+        "availableCredit": 2881.11,
+        "minimumPaymentDueAmount": 0,
+        "paymentDueDate": "2023-09-06",
+        "embossedName": "GLORYVIK DIVERSE",
+        "productType": {
+          "code": "510",
+          "description": "MASTERCARD STANDARD"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 8421,
+          "canRedeemPoints": true,
+          "moneyPoints": 80
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 77.29,
+        "currentDate": {
+          "to": "2023-09-09",
+          "from": "2023-08-09"
+        },
+        "previousDate": {
+          "to": "2023-08-09",
+          "from": "2023-07-09"
+        },
+        "lastDate": {
+          "to": "2023-07-09",
+          "from": "2023-06-09"
+        }
+      },
+      {
+        "id": "U2FsdGVkX1+5rHng0lv1tlArIIQeTePRP5DmyMbXfEVQqG32P3+Jqk6hz2i8k3zO",
+        "institution": {
+          "institutionId": "682",
+          "institutionName": "COOPERATIVA A/C RINCON",
+          "phoneNumber": "787-823-2735",
+          "email": "amoreno@cooprincon.com",
+          "addresses": [
+            {
+              "address1": "APARTADO",
+              "address2": "",
+              "city": "RINCON PR 00677",
+              "country": "PR",
+              "postalCode": "00677"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "MASTERCARD",
+        "last4Digits": "6107",
+        "creditLimit": 2500,
+        "currentBalance": 1877.9,
+        "availableCredit": 602.6,
+        "minimumPaymentDueAmount": 0,
+        "paymentDueDate": "2023-09-06",
+        "embossedName": "ERNESTO CARDONA",
+        "productType": {
+          "code": "510",
+          "description": "MASTERCARD REGULAR"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 25652,
+          "canRedeemPoints": true,
+          "moneyPoints": 250
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 60,
+        "currentDate": {
+          "to": "2023-09-09",
+          "from": "2023-08-09"
+        },
+        "previousDate": {
+          "to": "2023-08-09",
+          "from": "2023-07-09"
+        },
+        "lastDate": {
+          "to": "2023-07-09",
+          "from": "2023-06-09"
+        }
+      },
+      {
+        "id": "U2FsdGVkX1+y4cCnRP2oqwrn2jzFnibyIa+IYRSn4sHykYgTbB/2Bcl2DrWCHeTh",
+        "institution": {
+          "institutionId": "689",
+          "institutionName": "COOPERATIVA A/C SAN MIGUEL",
+          "phoneNumber": "787-869-2180",
+          "email": "arivera@sanmiguelcoop.com",
+          "addresses": [
+            {
+              "address1": "APARTADO",
+              "address2": "",
+              "city": "NARANJITO PR 00719",
+              "country": "PR",
+              "postalCode": "00719"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "MASTERCARD",
+        "last4Digits": "2598",
+        "creditLimit": 12250,
+        "currentBalance": 452.8,
+        "availableCredit": 11669.43,
+        "minimumPaymentDueAmount": 20,
+        "paymentDueDate": "2023-10-02",
+        "embossedName": "FRANCISCA RODRIGUEZ",
+        "productType": {
+          "code": "510",
+          "description": "MASTERCARD REGULAR"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 14349,
+          "canRedeemPoints": true,
+          "moneyPoints": 140
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 123.34,
+        "currentDate": {
+          "to": "2023-10-05",
+          "from": "2023-09-05"
+        },
+        "previousDate": {
+          "to": "2023-09-05",
+          "from": "2023-08-05"
+        },
+        "lastDate": {
+          "to": "2023-08-05",
+          "from": "2023-07-05"
+        }
+      }
+    ],
+    "amount": "$RandomNumber",
+    "isCreditCardExpired": false,
+    "institutionId": "614",
+    "hasTrxProcessed": true,
+    "accountType": "CREDIT_CARD",
+    "cardType": "CREDIT_CARD",
+    "encryptedCardId": "U2FsdGVkX1+PK8zFVX0aUWzSVbK6PjAt6phRjuz+0rwwJavO19UrLhx+rgsGqAdl",
+    "customName": "QA-Payments",
+    "dateOfBirth": "1970-10-17",
+    "ssnLastFourDigits": "0104",
+    "isAdmin": false,
+    "accountNumber": "1111222233330000",
+    "accountId": "0005440196140036636",
+    "hasTrxPend": false,
+    "merchantCategoryDescription": "Automation Services",
+    "phone": "7875861234",
+    "cardExpirationDate": "2026-08",
+    "creditCardNumber": "5440196140036636",
+    "cardId": "0005440196140036636",
+    "merchantCategoryCode": "4705",
+    "name": "LUCY",
+    "isNotBlocked": true,
+    "card": "0005440196140036636"
+  },
+  "Marisol1312": {
+    "date": "$WeekAgo",
+    "login_app": [
+      "Marisol1312",
+      "Test**1234567890"
+    ],
+    "lastName": "VALENTIN",
+    "sub": "3408ea9a-b146-427d-858e-fe82faf87c7d",
+    "CVV": "690",
+    "secondCardFourDigits": "",
+    "description": "Automation 01",
+    "isCardActive": true,
+    "login": [
+      "Marisol1312",
+      "Test**1234567890"
+    ],
+    "type": "$TypeOperation",
+    "cardsQuantity": 1,
+    "lastEightDigits": "10029958",
+    "routing": "110000000",
+    "routeId": "VPL-PR",
+    "cardSecurityCode": "690",
+    "customerId": "580666988",
+    "ClientId": "46tt7vjolinshdbhlpa9l00879",
+    "customerIdType": "SSN",
+    "accType": "s",
+    "email": "perficientclienttest@gmail.com",
+    "expirationDate": "02/25",
+    "traceId": "0a6baba2-a7eb-4069-b6dc-1192d22c0718",
+    "cardData": [
+      {
+        "id": "U2FsdGVkX19pBmVUjLRkn+PR9iDBpUtHLCnTjj2i7b24JCizEAaOK+XklGSD5hIi",
+        "institution": {
+          "institutionId": "636",
+          "institutionName": "COOPERATIVA DE A/C ARECIBO",
+          "phoneNumber": "787-878-2095",
+          "email": "sruiz@coopaca.com",
+          "addresses": [
+            {
+              "address1": "CALL BOX",
+              "address2": "",
+              "city": "ARECIBO, P. R. 00613-1056",
+              "country": "PR",
+              "postalCode": "00613"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "VISA",
+        "last4Digits": "9958",
+        "creditLimit": 5000,
+        "currentBalance": 4927.53,
+        "availableCredit": 572.47,
+        "minimumPaymentDueAmount": 90,
+        "paymentDueDate": "2023-09-06",
+        "embossedName": "MARISOL VALENTIN",
+        "productType": {
+          "code": "410",
+          "description": "VISA CLASSIC CARD"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 11472,
+          "canRedeemPoints": true,
+          "moneyPoints": 110
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 70,
+        "currentDate": {
+          "to": "2023-09-09",
+          "from": "2023-08-09"
+        },
+        "previousDate": {
+          "to": "2023-08-09",
+          "from": "2023-07-09"
+        },
+        "lastDate": {
+          "to": "2023-07-09",
+          "from": "2023-06-09"
+        }
+      }
+    ],
+    "mobilePhoneNumber": "7872347588",
+    "enrollmentId": "4ebd6f09-f40a-4b83-82c3-d6cae7fec696",
+    "amount": "$RandomNumber",
+    "isCreditCardExpired": false,
+    "institutionId": "636",
+    "hasTrxProcessed": true,
+    "accountType": "CREDIT_CARD",
+    "encryptedCardId": "U2FsdGVkX19pBmVUjLRkn+PR9iDBpUtHLCnTjj2i7b24JCizEAaOK+XklGSD5hIi",
+    "cardType": "CREDIT_CARD",
+    "dateOfBirth": "1965-10-27",
+    "customName": "QA-Payments",
+    "ssnLastFourDigits": "6988",
+    "isAdmin": false,
+    "accountNumber": "1111222233330000",
+    "accountId": "0004199100010029958",
+    "hasTrxPend": false,
+    "merchantCategoryDescription": "Automation Services",
+    "phone": "7872347588",
+    "creditCardNumber": "4199100010029958",
+    "cardExpirationDate": "2025-02",
+    "cardId": "0004199100010029958",
+    "merchantCategoryCode": "4705",
+    "name": "MARISOL",
+    "isNotBlocked": true,
+    "card": "0004199100010029958"
+  },
+  "Facundo2023": {
+    "date": "$WeekAgo",
+    "isCardActive": true,
+    "type": "$TypeOperation",
+    "cardsQuantity": 1,
+    "customerType": "SSN",
+    "cardSecurityCode": "492",
+    "financialInstitutionId": "636",
+    "accType": "s",
+    "traceId": "0a6baba2-a7eb-4069-b6dc-1192d22c0718",
+    "cardData": [
+      {
+        "id": "U2FsdGVkX1+UXpYlje63PLDKFIWsMOUMPPejGvMwAr8yXdB+Chs8sEf7CU8eu76K",
+        "institution": {
+          "institutionId": "636",
+          "institutionName": "COOPERATIVA DE A/C ARECIBO",
+          "phoneNumber": "787-878-2095",
+          "email": "sruiz@coopaca.com",
+          "addresses": [
+            {
+              "address1": "CALL BOX",
+              "address2": "",
+              "city": "ARECIBO, P. R. 00613-1056",
+              "country": "PR",
+              "postalCode": "00613"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "VISA",
+        "last4Digits": "9160",
+        "creditLimit": 3000,
+        "currentBalance": 1647.8,
+        "availableCredit": 1652.2,
+        "minimumPaymentDueAmount": 33,
+        "paymentDueDate": "2023-09-06",
+        "embossedName": "JUAN M FONSECA",
+        "productType": {
+          "code": "410",
+          "description": "VISA CLASSIC CARD"
+        },
+        "isActive": true,
+        "isCreditCardExpired": true,
+        "rewards": {
+          "rewardsPoints": 24624,
+          "canRedeemPoints": true,
+          "moneyPoints": 240
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 300,
+        "currentDate": {
+          "to": "2023-09-09",
+          "from": "2023-08-09"
+        },
+        "previousDate": {
+          "to": "2023-08-09",
+          "from": "2023-07-09"
+        },
+        "lastDate": {
+          "to": "2023-07-09",
+          "from": "2023-06-09"
+        }
+      }
+    ],
+    "isCreditCardExpired": true,
+    "institutionId": "636",
+    "hasTrxProcessed": true,
+    "accountType": "CREDIT_CARD",
+    "encryptedCardId": "U2FsdGVkX1+UXpYlje63PLDKFIWsMOUMPPejGvMwAr8yXdB+Chs8sEf7CU8eu76K",
+    "customName": "QA-Payments",
+    "ssnLastFourDigits": "6888",
+    "isAdmin": false,
+    "accountId": "0004199100010149160",
+    "merchantCategoryDescription": "Automation Services",
+    "phone": "7876548795",
+    "creditCardNumber": "4199100010149160",
+    "cardId": "0004199100010149160",
+    "name": "JUAN",
+    "card": "0004199100010149160",
+    "login_app": [
+      "Facundo2023",
+      "Test**1234567890"
+    ],
+    "lastName": "FONSECA",
+    "sub": "daccd8a2-6f23-4506-b965-ef5a9b305443",
+    "CVV": "492",
+    "secondCardFourDigits": "",
+    "socialSecurityNumber": "598216888",
+    "description": "Automation 01",
+    "login": [
+      "Facundo2023",
+      "Test**1234567890"
+    ],
+    "lastEightDigits": "10149160",
+    "routing": "110000000",
+    "routeId": "VPL-PR",
+    "customerId": "598216888",
+    "customerIdType": "SSN",
+    "email": "perficientclienttest@gmail.com",
+    "expirationDate": "09/23",
+    "mobilePhoneNumber": "7876548795",
+    "cvv": "492",
+    "amount": "$RandomNumber",
+    "cardType": "CREDIT_CARD",
+    "dateOfBirth": "1979-08-29",
+    "accountNumber": "1111222233330000",
+    "hasTrxPend": false,
+    "cardExpirationDate": "2023-09",
+    "merchantCategoryCode": "4705",
+    "isNotBlocked": true
+  },
+  "Edgardo2023": {
+    "date": "$WeekAgo",
+    "login_app": [
+      "Edgardo2023",
+      "Test**1234567890"
+    ],
+    "lastName": "DELGADO",
+    "sub": "1851ace8-4877-41c3-bade-a688c733f216",
+    "CVV": "249",
+    "secondCardFourDigits": "",
+    "description": "Automation 01",
+    "isCardActive": true,
+    "login": [
+      "Edgardo2023",
+      "Test**1234567890"
+    ],
+    "type": "$TypeOperation",
+    "cardsQuantity": 7,
+    "lastEightDigits": "40023229",
+    "routing": "110000000",
+    "routeId": "VPL-PR",
+    "cardSecurityCode": "249",
+    "customerId": "031688579",
+    "customerIdType": "SSN",
+    "accType": "W",
+    "email": "perficientclienttest@gmail.com",
+    "expirationDate": "09/23",
+    "traceId": "0a6baba2-a7eb-4069-b6dc-1192d22c0718",
+    "cardData": [
+      {
+        "id": "U2FsdGVkX18QOE72dOf5k6uohLHlMwnwE2tjjAvVuES1mrrG/MjGX/K6/fYZ6PEI",
+        "institution": {
+          "institutionId": "605",
+          "institutionName": "COOPERATIVA A/C DE CAMUY",
+          "phoneNumber": "787-898-4970",
+          "email": "servicioselectronicos@camuycoop.com",
+          "addresses": [
+            {
+              "address1": "AVE BALTAZAR JIMENEZ MDEZ",
+              "address2": "",
+              "city": "CAMUY, PR 00627",
+              "country": "PR",
+              "postalCode": "00627"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "MASTERCARD",
+        "last4Digits": "8589",
+        "creditLimit": 4999,
+        "currentBalance": 3470.41,
+        "availableCredit": 1528.59,
+        "minimumPaymentDueAmount": 97,
+        "paymentDueDate": "2023-10-02",
+        "embossedName": "KEILA CABRERA",
+        "productType": {
+          "code": "510",
+          "description": "MASTERCARD REGULAR"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 5628,
+          "canRedeemPoints": true,
+          "moneyPoints": 50
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 50,
+        "currentDate": {
+          "to": "2023-10-05",
+          "from": "2023-09-05"
+        },
+        "previousDate": {
+          "to": "2023-09-05",
+          "from": "2023-08-05"
+        },
+        "lastDate": {
+          "to": "2023-08-05",
+          "from": "2023-07-05"
+        }
+      },
+      {
+        "id": "U2FsdGVkX1/hbadu0n6kfwa6U+fLdxIicrvyy2ygeP40HjoMIvtMqMX+ecbB0zWU",
+        "institution": {
+          "institutionId": "624",
+          "institutionName": "COOP PADRE SALVADOR RUFFOLO (PARROCOOP)",
+          "phoneNumber": "787-847-2660",
+          "email": "lcruz@parrocoop.coop",
+          "addresses": [
+            {
+              "address1": "PO BOX",
+              "address2": "",
+              "city": "VILLALBA, PR 00766-1553",
+              "country": "PR",
+              "postalCode": "00766"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "MASTERCARD",
+        "last4Digits": "3229",
+        "creditLimit": 2000,
+        "currentBalance": 1514.97,
+        "availableCredit": 485.03,
+        "minimumPaymentDueAmount": 42,
+        "paymentDueDate": "2023-10-02",
+        "embossedName": "EDGARDO DELGADO NEGRO",
+        "productType": {
+          "code": "510",
+          "description": "MASTERCARD REGULAR"
+        },
+        "isActive": true,
+        "isCreditCardExpired": true,
+        "rewards": {
+          "rewardsPoints": 2937,
+          "canRedeemPoints": true,
+          "moneyPoints": 20
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 60,
+        "currentDate": {
+          "to": "2023-10-05",
+          "from": "2023-09-05"
+        },
+        "previousDate": {
+          "to": "2023-09-05",
+          "from": "2023-08-05"
+        },
+        "lastDate": {
+          "to": "2023-08-05",
+          "from": "2023-07-05"
+        }
+      },
+      {
+        "id": "U2FsdGVkX1+2CAbtF3qAQvKGfDA/BXx8zOfS914lixFN1uH3yJgPjHEzOFSnG/hI",
+        "institution": {
+          "institutionId": "662",
+          "institutionName": "COOPERATIVA A/C VEGA ALTA",
+          "phoneNumber": "787-883-4360",
+          "email": "joquendo@vegacoop.com",
+          "addresses": [
+            {
+              "address1": "APARTADO",
+              "address2": "",
+              "city": "VEGA ALTA,PR 00692",
+              "country": "PR",
+              "postalCode": "00692"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "VISA",
+        "last4Digits": "5337",
+        "creditLimit": 2000,
+        "currentBalance": 539.28,
+        "availableCredit": 1460.72,
+        "minimumPaymentDueAmount": 0,
+        "paymentDueDate": "2023-09-06",
+        "embossedName": "BETZAIDA MARTINEZ",
+        "productType": {
+          "code": "410",
+          "description": "VISA CLASSIC CARD"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 6989,
+          "canRedeemPoints": true,
+          "moneyPoints": 60
+        },
+        "blockingStatus": "OtherTypeOfBlock",
+        "lastPaymentAmount": 100,
+        "currentDate": {
+          "to": "2023-09-09",
+          "from": "2023-08-09"
+        },
+        "previousDate": {
+          "to": "2023-08-09",
+          "from": "2023-07-09"
+        },
+        "lastDate": {
+          "to": "2023-07-09",
+          "from": "2023-06-09"
+        }
+      },
+      {
+        "id": "U2FsdGVkX1/8A1x0RmBMXKM+7novvLIPnbnGOO2Q8EPOxo7QJD0CytON9qRQVwIP",
+        "institution": {
+          "institutionId": "677",
+          "institutionName": "COOPERATIVA A/C VILLA COOP",
+          "phoneNumber": "787-847-5640",
+          "email": "emaldonado@villa-coop.com",
+          "addresses": [
+            {
+              "address1": "APTDO",
+              "address2": "",
+              "city": "VILLALBA, PR 00766",
+              "country": "PR",
+              "postalCode": "00766"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "MASTERCARD",
+        "last4Digits": "7238",
+        "creditLimit": 500,
+        "currentBalance": 331.77,
+        "availableCredit": 168.23,
+        "minimumPaymentDueAmount": 0,
+        "paymentDueDate": "2023-09-06",
+        "embossedName": "EDGARDO DELGADO",
+        "productType": {
+          "code": "510",
+          "description": "MASTERCARD STANDARD"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 2457,
+          "canRedeemPoints": true,
+          "moneyPoints": 20
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 75,
+        "currentDate": {
+          "to": "2023-09-09",
+          "from": "2023-08-09"
+        },
+        "previousDate": {
+          "to": "2023-08-09",
+          "from": "2023-07-09"
+        },
+        "lastDate": {
+          "to": "2023-07-09",
+          "from": "2023-06-09"
+        }
+      },
+      {
+        "id": "U2FsdGVkX1/pUfmjMfoxWzLAsArf2duB80T1qZIxAYUVx/nW/tO4A+vhZbOYTSC2",
+        "institution": {
+          "institutionId": "677",
+          "institutionName": "COOPERATIVA A/C VILLA COOP",
+          "phoneNumber": "787-847-5640",
+          "email": "emaldonado@villa-coop.com",
+          "addresses": [
+            {
+              "address1": "APTDO",
+              "address2": "",
+              "city": "VILLALBA, PR 00766",
+              "country": "PR",
+              "postalCode": "00766"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "MASTERCARD",
+        "last4Digits": "3772",
+        "creditLimit": 500,
+        "currentBalance": 291.87,
+        "availableCredit": 208.13,
+        "minimumPaymentDueAmount": 10,
+        "paymentDueDate": "2023-09-06",
+        "embossedName": "PRISCILLA GARCIA",
+        "productType": {
+          "code": "510",
+          "description": "MASTERCARD STANDARD"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 14082,
+          "canRedeemPoints": true,
+          "moneyPoints": 140
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 200,
+        "currentDate": {
+          "to": "2023-09-09",
+          "from": "2023-08-09"
+        },
+        "previousDate": {
+          "to": "2023-08-09",
+          "from": "2023-07-09"
+        },
+        "lastDate": {
+          "to": "2023-07-09",
+          "from": "2023-06-09"
+        }
+      },
+      {
+        "id": "U2FsdGVkX1/5RuEyu3vw7suNCYIiZYVKNQ80tpluU2idpBVhJF/VYhdGgWMXHIt+",
+        "institution": {
+          "institutionId": "682",
+          "institutionName": "COOPERATIVA A/C RINCON",
+          "phoneNumber": "787-823-2735",
+          "email": "amoreno@cooprincon.com",
+          "addresses": [
+            {
+              "address1": "APARTADO",
+              "address2": "",
+              "city": "RINCON PR 00677",
+              "country": "PR",
+              "postalCode": "00677"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "MASTERCARD",
+        "last4Digits": "0346",
+        "creditLimit": 15000,
+        "currentBalance": 0,
+        "availableCredit": 15000,
+        "minimumPaymentDueAmount": 0,
+        "paymentDueDate": "2023-06-06",
+        "embossedName": "ALOISE IBOUANGA",
+        "productType": {
+          "code": "530",
+          "description": "MASTERCARD GOLD"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 4785,
+          "canRedeemPoints": true,
+          "moneyPoints": 40
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 35.34,
+        "currentDate": {
+          "to": "2023-09-09",
+          "from": "2023-05-09"
+        },
+        "previousDate": {},
+        "lastDate": {}
+      },
+      {
+        "id": "U2FsdGVkX18+upvSD8tyYWNtS+ZjXDfjcqRZ6gx4Jhg3p7AQgTazB1z7t4CcY9EA",
+        "institution": {
+          "institutionId": "689",
+          "institutionName": "COOPERATIVA A/C SAN MIGUEL",
+          "phoneNumber": "787-869-2180",
+          "email": "arivera@sanmiguelcoop.com",
+          "addresses": [
+            {
+              "address1": "APARTADO",
+              "address2": "",
+              "city": "NARANJITO PR 00719",
+              "country": "PR",
+              "postalCode": "00719"
+            }
+          ],
+          "implementedServices": [
+            "GetCustomerInformationInquiry",
+            "GetAccountDetails",
+            "ListCustomerAccounts",
+            "ListInProcessTransactions",
+            "ListTransactions",
+            "CardTemporaryLock",
+            "CardActivation",
+            "ListCustomerInstitutions",
+            "CardFraudLock",
+            "InstitutionsProfile",
+            "ListInstitutionStatus",
+            "AdminCardDeactivation",
+            "GetTransaction",
+            "CardValidation",
+            "AdminCardUnblock"
+          ]
+        },
+        "network": "MASTERCARD",
+        "last4Digits": "9973",
+        "creditLimit": 1000,
+        "currentBalance": 570.16,
+        "availableCredit": 429.84,
+        "minimumPaymentDueAmount": 20,
+        "paymentDueDate": "2023-10-02",
+        "embossedName": "RAMON ROSA",
+        "productType": {
+          "code": "510",
+          "description": "MASTERCARD REGULAR"
+        },
+        "isActive": true,
+        "isCreditCardExpired": false,
+        "rewards": {
+          "rewardsPoints": 22837,
+          "canRedeemPoints": true,
+          "moneyPoints": 220
+        },
+        "blockingStatus": "NoBlocked",
+        "lastPaymentAmount": 984.77,
+        "currentDate": {
+          "to": "2023-10-05",
+          "from": "2023-09-05"
+        },
+        "previousDate": {
+          "to": "2023-09-05",
+          "from": "2023-08-05"
+        },
+        "lastDate": {
+          "to": "2023-08-05",
+          "from": "2023-07-05"
+        }
+      }
+    ],
+    "enrollmentId": "4ebd6f09-f40a-4b83-82c3-d6cae7fec696",
+    "amount": "$RandomNumber",
+    "isCreditCardExpired": false,
+    "institutionId": "624",
+    "hasTrxProcessed": false,
+    "accountType": "CREDIT_CARD",
+    "encryptedCardId": "U2FsdGVkX18QOE72dOf5k6uohLHlMwnwE2tjjAvVuES1mrrG/MjGX/K6/fYZ6PEI",
+    "cardType": "CREDIT_CARD",
+    "dateOfBirth": "1987-12-21",
+    "customName": "QA-Payments",
+    "ssnLastFourDigits": "8579",
+    "isAdmin": false,
+    "accountNumber": "1111222233330000",
+    "accountId": "0005440196240023229",
+    "hasTrxPend": false,
+    "merchantCategoryDescription": "Automation Services",
+    "phone": "7872345678",
+    "creditCardNumber": "5440196240023229",
+    "cardExpirationDate": "2023-09",
+    "cardId": "0005440196240023229",
+    "merchantCategoryCode": "4705",
+    "name": "EDGARDO",
+    "isNotBlocked": true,
+    "card": "0005440196240023229"
+  }
+}

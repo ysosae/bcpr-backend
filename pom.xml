@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.cucumber</groupId>
+    <artifactId>bcpr-testing-framework-backend</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.plugin.version>4.0.0-beta-1</maven.compiler.plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+        <maven-failsafe-plugin.version>3.0.0-M5</maven-failsafe-plugin.version>
+        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
+        <maven-compiler-plugin>3.10.1</maven-compiler-plugin>
+        <fmt-maven-plugin.version>2.8</fmt-maven-plugin.version>
+        <cucumber.version>7.15.0</cucumber.version>
+        <junit.version>5.11.0</junit.version>
+        <aws.java.sdk.version>1.12.548</aws.java.sdk.version>
+        <aws.sts.version>2.17.286</aws.sts.version>
+        <java.sdk.version>2.27.24</java.sdk.version>
+        <aws-java-sdk-code-generator.version>1.12.771</aws-java-sdk-code-generator.version>
+        <aws.dynamodb.version>${java.sdk.version}</aws.dynamodb.version>
+        <aws.lambda.version>${java.sdk.version}</aws.lambda.version>
+        <aws.cloudfront.version>${java.sdk.version}</aws.cloudfront.version>
+        <aws.apigateway.version>${java.sdk.version}</aws.apigateway.version>
+        <aws.cloudwatch.version>${java.sdk.version}</aws.cloudwatch.version>
+        <aws.secretsmanager.version>${java.sdk.version}</aws.secretsmanager.version>
+        <aws.elasticloadbalancingv2.version>${java.sdk.version}</aws.elasticloadbalancingv2.version>
+        <aws.rds.version>${java.sdk.version}</aws.rds.version>
+        <aws.sqs.version>${java.sdk.version}</aws.sqs.version>
+        <aws.sns.version>${java.sdk.version}</aws.sns.version>
+        <aws.cognitoidentityprovider.version>${java.sdk.version}</aws.cognitoidentityprovider.version>
+        <java.jwt.version>3.18.2</java.jwt.version>
+        <log4j-core.version>2.20.0</log4j-core.version>
+        <log4j.version>1.2.17</log4j.version>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
+        <commons-validator.version>1.4.1</commons-validator.version>
+        <javac-shaded.version>9+181-r4173-1</javac-shaded.version>
+        <json.simple.version>1.1.1</json.simple.version>
+        <json-schema-validator.version>5.1.1</json-schema-validator.version>
+        <httpclient.version>4.5.13</httpclient.version>
+        <ant.version>1.10.12</ant.version>
+        <aspectj.version>1.9.6</aspectj.version>
+        <slf4j-api.version>1.7.5</slf4j-api.version>
+        <slf4j-simple.version>1.6.4</slf4j-simple.version>
+        <lombok.version>1.18.34</lombok.version>
+        <testng.version>7.10.2</testng.version>
+        <rest-assured-version>5.4.0</rest-assured-version>
+        <allure-testng-version>2.18.1</allure-testng-version>
+        <allure.maven.version>2.11.2</allure.maven.version>
+        <allure-junit5.version>2.18.0</allure-junit5.version>
+        <allure-cucumber-jvm.version>2.18.0</allure-cucumber-jvm.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.cucumber</groupId>
+                <artifactId>cucumber-bom</artifactId>
+                <version>${cucumber.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>${junit.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>7.1.0</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit-platform-engine</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-suite -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite</artifactId>
+            <version>1.11.0</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.groovy/groovy -->
+        <dependency>
+            <groupId>org.apache.groovy</groupId>
+            <artifactId>groovy</artifactId>
+            <version>4.0.21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>2.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-codec-http -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-codec-http</artifactId>
+            <version>4.1.113.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.18.0-rc1</version> <!-- Example of the latest safe version -->
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/software.amazon.ion/ion-java -->
+        <dependency>
+            <groupId>software.amazon.ion</groupId>
+            <artifactId>ion-java</artifactId>
+            <version>1.5.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.16.1</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.15</version> <!-- Updated to the latest version -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.4</version> <!-- Example of the latest safe version -->
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>32.1.2-jre</version> <!-- Example of the latest version, use the jre variant for non-Android projects -->
+        </dependency>
+
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk</artifactId>
+            <version>${aws.java.sdk.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>${java.jwt.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j-core.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Log4j 2.x dependencies -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.sun.jmx</groupId>
+                    <artifactId>jmxri</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jdmk</groupId>
+                    <artifactId>jmxtools</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>javax.jms</groupId>
+                    <artifactId>jms</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- Puente para Log4j 1.x hacia 2.x -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-1.2-api</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured-all</artifactId>
+            <version>${rest-assured-version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${rest-assured-version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.errorprone</groupId>
+            <artifactId>javac-shaded</artifactId>
+            <version>${javac-shaded.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure-testng-version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.automatedowl</groupId>
+            <artifactId>allure-environment-writer</artifactId>
+            <version>1.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.ant/ant -->
+        <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant</artifactId>
+            <version>${ant.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>${maven.compiler.plugin.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j-simple.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.awaitility/awaitility -->
+        <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+            <version>4.2.0</version>
+            <scope>test</scope>
+        </dependency>
+
+
+
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>${json-schema-validator.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-validator</groupId>
+            <artifactId>commons-validator</artifactId>
+            <version>${commons-validator.version}</version>
+        </dependency>
+
+        <!--Allure Reporting Dependencies-->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>${allure-junit5.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber-jvm -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber-jvm</artifactId>
+            <version>${allure-cucumber-jvm.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>dynamodb</artifactId>
+            <version>${aws.dynamodb.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>cloudwatch</artifactId>
+            <version>${aws.cloudwatch.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/cognitoidentityprovider -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>cognitoidentityprovider</artifactId>
+            <version>${aws.cognitoidentityprovider.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>lambda</artifactId>
+            <version>${aws.lambda.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>cloudfront</artifactId>
+            <version>${aws.cloudfront.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>codepipeline</artifactId>
+            <version>${aws.cloudfront.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>apigateway</artifactId>
+            <version>${aws.apigateway.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>secretsmanager</artifactId>
+            <version>${aws.secretsmanager.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>rds</artifactId>
+            <version>${aws.rds.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>sqs</artifactId>
+            <version>${aws.sqs.version}</version>
+        </dependency>
+        <!-- AWS SDK for Java - Elastic Load Balancing V2 -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>elasticloadbalancingv2</artifactId>
+            <version>${aws.elasticloadbalancingv2.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/sts -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>sts</artifactId>
+            <version>${aws.sts.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>sns</artifactId>
+            <version>${aws.sns.version}</version> <!-- Replace with the latest version available -->
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-s3</artifactId>
+            <version>1.12.464</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-code-generator -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-code-generator</artifactId>
+            <version>${aws-java-sdk-code-generator.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-ecs -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-ecs</artifactId>
+            <version>1.12.505</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                    <verbose>true</verbose>
+                    <basedir/>
+                    <buildDirectory/>
+                    <mainOutputDirectory/>
+                    <outputDirectory/>
+                    <projectArtifact/>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven-resources-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>com.coveo</groupId>
+                <artifactId>fmt-maven-plugin</artifactId>
+                <version>${fmt-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>format</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure.maven.version}</version>
+                <configuration>
+                    <reportVersion>2.18.0</reportVersion>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <phase>post-integration-test</phase>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <reportVersion>2.14.0</reportVersion>
+                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
+                    <includes>
+                        <include>**/*TestRunner.java</include>
+                        <include>**/RunTest.java</include>
+                    </includes>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <rerunFailingTestsCount>1</rerunFailingTestsCount>
+                    <properties>
+                        <argLine>
+                            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.test.jar"
+                        </argLine>
+                        <argLine>
+                            -Dcucumber.options="--plugin io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"
+                        </argLine>
+                    </properties>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>${maven-failsafe-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <classesDirectory>${project.build.directory}/classes</classesDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

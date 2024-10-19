@@ -1,0 +1,13 @@
+mutation {
+  sendContactUsRequest(
+    input: {
+      user: { email: "perficientclienttest@gmail.com", name: "QA-Test", phoneNumber:"0951816390" }
+      institutionId:"$institutionId"
+      reason: "QA-simple reason"
+      message: "this is a massage"
+    }
+  ) {
+    code
+    message
+  }
+}

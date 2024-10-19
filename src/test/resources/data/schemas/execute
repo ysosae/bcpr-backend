@@ -1,0 +1,10 @@
+instalar:
+https://www.npmjs.com/package/json-schema-generator
+
+
+Ejecutar:
+Example:
+json-schema-generator --file path/to/input.json -o path/to/output.json
+
+
+json-schema-generator --file src/test/resources/data/schemas/graphQL/makePaymentInput.json -o src/test/resources/data/schemas/graphQL/makePaymentOutput.json

@@ -1,0 +1,14 @@
+mutation {
+makePayment(
+  input: {
+      cardId: "$encryptedCardId"
+      amount: "256.08"
+      institutionId: "$institutionId"
+      accountId: "$accountId"
+  }
+  ){
+    code
+    message
+    id
+  }
+}

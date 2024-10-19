@@ -1,0 +1,6 @@
+query{
+  getS3UploadUrl(fileExtension: "png"){
+    upLoadUrl
+    publicUrl
+  }
+}

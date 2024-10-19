@@ -1,0 +1,16 @@
+mutation {
+  sendEmailNotification(
+    emailNotificationDTO: {
+      email_to: "perficientclienttest@gmail.com"
+      subject: "Test Notification"
+      content_type: "text/plain"
+      message: "Mi Tarjeta Coop"
+      cmdb_id: "BCPR#"
+    }
+  ) {
+    status {
+      code
+      msg
+    }
+  }
+}

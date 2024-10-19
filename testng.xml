@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test thread-count="5" name="bcpr-rest-api-automation-framework">
+        <classes>
+            <class name="test.EnvBCPRTest">
+                <methods>
+                    <include name="testGetLambda"/>
+                    <include name="testValidateAllDynamoDBTable"/>
+                </methods>
+            </class> <!-- test.EnvBCPRTest -->
+        </classes>
+    </test> <!-- bcpr-rest-api-automation-framework -->
+</suite> <!-- Default Suite -->

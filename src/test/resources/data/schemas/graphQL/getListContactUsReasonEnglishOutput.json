@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "listContactUsReason": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "description"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "description"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "description"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "listContactUsReason"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

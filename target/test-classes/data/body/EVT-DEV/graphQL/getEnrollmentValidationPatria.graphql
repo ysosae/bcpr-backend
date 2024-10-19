@@ -1,0 +1,21 @@
+mutation {
+  enrollmentValidation(
+    userArgs: {
+      name: "PATRIA"
+      lastName: "DEL VALLE"
+      socialSecurityNumber: "580559033"
+      customerType: "TAX_ID"
+      dateOfBirth: "1961-07-20"
+      mobilePhoneNumber: "7872347588"
+      email: "perficientclienttest@gmail.com"
+      financialInstitutionId: "659"
+      creditCardNumber: "5440206590003968"
+      expirationDate: "02/26"
+      cvv: "050"
+    }
+  ) {
+    status
+    expires
+    enrollmentId
+  }
+}

@@ -1,0 +1,8 @@
+query{
+  listCustomerInstitutions{
+  id
+  name
+  email
+  status
+}
+}

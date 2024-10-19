@@ -1,0 +1,24 @@
+{
+  "data": {
+    "getProfile": {
+      "userName": "yulietsosa-uat",
+      "name": "Yuliet",
+      "lastname": "Sosa",
+      "phoneNumber": "+11164541135",
+      "email": "Yuliet.Sosa@evertecinc.com",
+      "callCenterPhoneNumbers": [
+        {
+          "institutionId": "0",
+          "institutionName": "Centro de Servicio al Socio",
+          "callCenterOptions": [
+            {
+              "description": "Member Service Center",
+              "phoneNumber": "787-641-2310",
+              "schedule": "Monday to Sunday  24/7, during all year"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

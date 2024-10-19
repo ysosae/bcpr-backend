@@ -1,0 +1,14 @@
+mutation {
+   adminCardDeactivation(
+     cardArguments: {
+       institutionId: "$institutionId"
+       lastEightDigits: "$lastEightDigits"
+       ssnLastFourDigits: "$ssnLastFourDigits"
+       cardId: "$encryptedCardId"
+       expirationDate: "$expirationDate"
+     }
+   ) {
+     message
+     status
+   }
+ }

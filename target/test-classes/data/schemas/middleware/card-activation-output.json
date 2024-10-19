@@ -1,0 +1,54 @@
+{   "$id": "https://bancoop.com/schemas/card-activation.response.schema.json",
+  "type": "object",
+  "title": "Card Activation - Response",
+  "description": "The response payload structure for the 'CardActivation' service.",
+  "properties": {
+    "traceId": {
+      "type": "string",
+      "description": "A UUID string used for tracing purposes.",
+      "$ref": "middleware.schema.json#/definitions/traceId"
+    },
+    "data": {
+      "message": {
+        "type": "string",
+        "description": "Description about the result"
+      },
+      "status": {
+        "description": "Status of the action.",
+        "type": "string",
+        "enum": [
+          "SUCCESS",
+          "PARTIALACT"
+        ]
+      },
+      "required": [
+        "status",
+        "message"
+      ]
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "$ref": "middleware.schema.json#/definitions/error"
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "traceId"
+  ],
+  "anyOf": [{
+    "required": [
+      "data"
+    ]
+  },
+    {
+      "required": [
+        "errors"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "findRecentPayments": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "required": [
+              "lastFourDigits",
+              "amount",
+              "date",
+              "status"
+            ],
+            "properties": {
+              "lastFourDigits": {
+                "type": "string",
+                "minLength": 1
+              },
+              "amount": {
+                "type": "string",
+                "minLength": 1
+              },
+              "date": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "findRecentPayments"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

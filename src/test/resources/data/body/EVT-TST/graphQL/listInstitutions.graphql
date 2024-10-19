@@ -1,0 +1,7 @@
+{
+    listInstitutions{
+        id
+        name
+        email
+    }
+}

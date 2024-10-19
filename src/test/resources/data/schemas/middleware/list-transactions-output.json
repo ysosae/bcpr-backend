@@ -1,0 +1,57 @@
+{    "$id": "https://bancoop.com/schemas/list-transactions.response.schema.json",
+  "title": "List Transactions  - Response",
+  "description": "The response payload structure definition for the 'ListTransactions' service.",
+  "type": "object",
+  "properties": {
+    "traceId": {
+      "type": "string",
+      "description": "A UUID string used for tracing purposes.",
+      "$ref": "middleware.schema.json#/definitions/traceId"
+    },
+    "data": {
+      "type": "object",
+      "offset": {
+        "type": "integer",
+        "description": "The offsetpoint where search query will begin returning transactions. If offset is not coming means that we don't have more transactions to return. If 0 value is returned means that service reach end of the list. New from v1.4.0",
+        "minimum": 0
+      },
+      "quantity": {
+        "type": "integer",
+        "description": "The number of elements in returned table.  New from v1.4.0",
+        "minimum": 0
+      },
+      "transactions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "description": "The transaction object",
+          "$ref": "middleware.schema.json#/definitions/baseTransactionObject"
+        }
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "$ref": "middleware.schema.json#/definitions/error"
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "traceId"
+  ],
+  "anyOf": [{
+    "required": [
+      "data"
+    ]
+  },
+    {
+      "required": [
+        "errors"
+      ]
+    }
+  ]
+}

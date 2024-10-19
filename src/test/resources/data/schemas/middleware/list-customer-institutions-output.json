@@ -1,0 +1,63 @@
+{    "$id": "https://bancoop.com/schemas/list-customer-institutions.schema.json",
+  "description": "The response payload structure definition for the 'ListCustomerInstitutions' service.",
+  "title": "List Customer Institution - Response",
+  "type": "object",
+  "properties": {
+    "traceId": {
+      "type": "string",
+      "description": "A UUID string used for tracing purposes.",
+      "$ref": "middleware.schema.json#/definitions/traceId"
+    },
+    "data": {
+      "type": "array",
+      "additionalItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "object": {
+            "type": "string",
+            "description": "The object type being returned.",
+            "$ref": "middleware.schema.json#/definitions/objectType"
+          },
+          "institutionId": {
+            "type": "string",
+            "description": "A unique number representing the financial institution.",
+            "$ref": "middleware.schema.json#/definitions/institutionId"
+          },
+          "institutionName": {
+            "type": "string",
+            "description": "A unique name description, representing the banking institution.",
+            "$ref": "middleware.schema.json#/definitions/institutionName"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "object",
+          "institutionId",
+          "institutionName"
+        ]
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "$ref": "middleware.schema.json#/definitions/error"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "traceId"
+  ],
+  "anyOf": [{
+    "required": [
+      "data"
+    ]
+  },
+    {
+      "required": [
+        "errors"
+      ]
+    }
+  ]
+}

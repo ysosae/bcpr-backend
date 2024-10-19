@@ -1,0 +1,56 @@
+query{
+    listCreditsCards {
+        id
+        institution {
+            institutionId
+            institutionName
+
+            phoneNumber
+            email
+            addresses{
+                address1
+                address2
+
+                city
+                country
+                postalCode
+            }
+            implementedServices
+
+        }
+        network
+        last4Digits
+        creditLimit
+        currentBalance
+        availableCredit
+        minimumPaymentDueAmount
+        paymentDueDate
+        embossedName
+        productType {
+            code
+            description
+        }
+        isActive
+        isCreditCardExpired
+        rewards{
+            rewardsPoints
+            canRedeemPoints
+            moneyPoints
+        }
+        blockingStatus
+        lastPaymentAmount
+        lastPaymentAmount
+        currentDate{
+            to
+            from
+        }
+        previousDate{
+            to
+            from
+        }
+        lastDate{
+            to
+            from
+        }
+    }
+}

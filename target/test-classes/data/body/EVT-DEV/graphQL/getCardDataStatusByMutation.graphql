@@ -1,0 +1,11 @@
+mutation {
+  switchCardTemporaryBlockStatus(
+    cardType:"$cardType"
+    cardId:"$encryptedCardId"
+    switchTo:$switchTo
+    institutionId:"$institutionId"
+
+  ){
+    currentStatus
+  }
+ }

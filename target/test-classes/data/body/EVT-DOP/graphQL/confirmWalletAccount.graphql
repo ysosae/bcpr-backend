@@ -1,0 +1,8 @@
+mutation {
+confirmWalletAccount(
+    accountId: "$accountIdPayments"
+  ) {
+   accountId
+   status
+  }
+}

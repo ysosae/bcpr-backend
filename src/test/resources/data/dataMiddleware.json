@@ -1,0 +1,106 @@
+{
+  "yuliet":{
+    "login":["yulietsosa-uat", "Test12345"],
+    "login_app":["yulietsosa-uat", "Test12345"],
+    "ClientId":"46tt7vjolinshdbhlpa9l00879",
+    "customerId": "581135033",
+    "cardId": "U2FsdGVkX1/2agRxU6DVc1DAn2LSBJjZHY4pgCkvb00hF2mrmGTKB0H0yzF6N2YA",
+    "institutionId": "659",
+    "ssnLastFourDigits": "5032",
+    "secondCardFourDigits": "",
+    "lastEightDigits": "90088456",
+    "expirationDate": "02/26",
+    "traceId":"0a6baba2-a7eb-4069-b6dc-1192d22c0718",
+    "routeId":"VPL-PR",
+    "customerIdType":"TAX_ID",
+    "accountId":"0005440206590088456",
+    "accountType":"CREDIT_CARD",
+    "CVV": "836",
+    "type":"$TypeOperation",
+    "amount":"$RandomNumber",
+    "date":"$WeekAgo",
+    "description":"Automation 01",
+    "merchantCategoryCode":"4705",
+    "merchantCategoryDescription":"Automation Services",
+    "card1": {
+      "institutionId": "659",
+      "customerId": "583135032",
+      "customerIdType": "TAX_ID",
+      "accountId": "0005440206590088456"
+    }
+  },
+  "facundo":{
+    "login":["facundovillalba-uat", "Test12345"],
+    "login_app":["facundovillalba-uat", "Test12345"],
+    "ClientId":"46tt7vjolinshdbhlpa9l00879",
+    "customerId": "598226982",
+    "card": "0004199100010104009",
+    "cardId": "U2FsdGVkX1+zJm2sInAu6FgfHY+WiwS00lbSYMPTPuX9pMWQfBn41xtTcss5BIIO",
+    "institutionId": "636",
+    "ssnLastFourDigits": "6982",
+    "secondCardFourDigits": "",
+    "lastEightDigits": "0104009",
+    "expirationDate": "09/23",
+    "traceId":"0a6baba2-a7eb-4069-b6dc-1192d22c0718",
+    "routeId":"VPL-PR",
+    "customerIdType":"SSN",
+    "accountId":"0004199100010104009",
+    "accountType":"CREDIT_CARD",
+    "CVV": "580",
+    "type":"$TypeOperation",
+    "amount":"$RandomNumber",
+    "date":"$WeekAgo",
+    "description":"Automation 01",
+    "merchantCategoryCode":"4705",
+    "merchantCategoryDescription":"Automation Services"
+  },
+  "marisol":{
+    "login":["PenUser3", "Test12345"],
+    "login_app":["PenUser3", "Test12345"],
+    "ClientId":"46tt7vjolinshdbhlpa9l00879",
+    "customerId": "580666988",
+    "card": "0004199100010029958",
+    "institutionId": "636",
+    "ssnLastFourDigits": "6988",
+    "secondCardFourDigits": "",
+    "lastEightDigits": "10029958",
+    "expirationDate": "02/25",
+    "traceId":"0a6baba2-a7eb-4069-b6dc-1192d22c0718",
+    "routeId":"VPL-PR",
+    "customerIdType":"SSN",
+    "accountId":"0004199100010029958",
+    "cardId":"0004199100010029958",
+    "accountType":"CREDIT_CARD",
+    "cardType": "CREDIT_CARD",
+    "CVV": "690",
+    "type":"$TypeOperation",
+    "amount":"$RandomNumber",
+    "date":"$WeekAgo",
+    "description":"Automation 01",
+    "merchantCategoryCode":"4705",
+    "merchantCategoryDescription":"Automation Services",
+    "cardSecurityCode": "690",
+    "cardExpirationDate": "2025-02",
+    "phone": "7874521702"
+  },
+  "camilo":{
+    "login":["camiloavila", "Test12345"],
+    "login_app":["camiloavila", "Test12345"]
+  },
+  "rosana":{
+    "login":["rosanacespedes", "Test12345"],
+    "login_app":["rosanacespedes", "Test12345"]
+  },
+  "leonardo":{
+    "login":["leonardoflores", "Test12345"],
+    "login_app":["leonardoflores", "Test12345"]
+  },
+  "pedro":{
+    "login":["pedrocardona", "Test12345"],
+    "login_app":["pedrocardona", "Test12345"]
+  },
+  "simon":{
+    "login":["simonfermo", "Test12345"],
+    "login_app":["simonfermo", "Test12345"]
+  }
+}

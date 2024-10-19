@@ -1,0 +1,19 @@
+mutation {
+  regainAccessValidation(
+    regainAccessData: {
+          socialSecurityNumber: "031688579",
+          customerType: "SSN",
+          dateOfBirth:"1987-12-21",
+          mobilePhoneNumber: "7872345678",
+          email: "perficientclienttest@gmail.com",
+          financialInstitutionId: "624",
+          creditCardNumber: "5440196240023229",
+          expirationDate: "09/23",
+          cvv: "249"
+    }
+  ) {
+    status
+    expires
+    regainAccessId
+  }
+}

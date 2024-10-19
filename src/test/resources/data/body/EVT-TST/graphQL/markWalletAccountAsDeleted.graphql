@@ -1,0 +1,6 @@
+mutation {
+markWalletAccountAsDeleted(accountId: "$accountId") {
+accountId
+status
+}
+}

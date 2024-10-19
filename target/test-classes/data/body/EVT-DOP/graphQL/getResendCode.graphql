@@ -1,0 +1,6 @@
+mutation {
+  resendCode(enrollmentId: "$enrollmentId") {
+    enrollmentId
+    status
+  }
+}

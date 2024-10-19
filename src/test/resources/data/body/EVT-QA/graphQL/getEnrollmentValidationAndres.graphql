@@ -1,0 +1,21 @@
+mutation {
+  enrollmentValidation(
+    userArgs: {
+      name: "ANDRES"
+      lastName: "LATORRE"
+      socialSecurityNumber: "598035111"
+      customerType: "SSN"
+      dateOfBirth: "1976-02-03"
+      mobilePhoneNumber: "7878526933"
+      email: "perficientclienttest@gmail.com"
+      financialInstitutionId: "636"
+      creditCardNumber: "5440206360003321"
+      expirationDate: "02/26"
+      cvv: "654"
+    }
+  ) {
+    status
+    expires
+    enrollmentId
+  }
+}

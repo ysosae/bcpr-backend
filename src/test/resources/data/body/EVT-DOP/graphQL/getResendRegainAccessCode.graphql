@@ -1,0 +1,6 @@
+mutation{
+  resendRegainAccessCode(regainAccessId:"$regainAccessId"){
+    status
+    regainAccessId
+  }
+}

@@ -1,0 +1,21 @@
+mutation {
+enrollmentValidation(userArgs:
+    {
+       name: "YALITHZA",
+       lastName: "LLOVETT",
+       socialSecurityNumber: "596141189",
+       customerType: "SSN",
+       dateOfBirth:"1963-05-04",
+       mobilePhoneNumber: "7875434444",
+       email: "PRUEBASBCPPR@YAHOO.COM",
+       financialInstitutionId: "622",
+       creditCardNumber: "5440196220059987",
+       expirationDate: "01/24",
+       cvv: "041"
+    })
+  {
+   status
+   expires
+   enrollmentId
+  }
+}

@@ -1,0 +1,12 @@
+mutation {
+  codeValidation(
+    codeArgs:
+    {
+      phoneCode:$phoneCode,
+      enrollmentId:"$enrollmentId"
+    })
+   {
+    enrollmentId
+    status
+  }
+ }

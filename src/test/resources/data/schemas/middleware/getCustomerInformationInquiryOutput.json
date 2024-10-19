@@ -1,0 +1,98 @@
+{
+    "$schema": "https://bancoop.com/schemas/middleware/schema",
+    "$id": "https://bancoop.com/schemas/get-customer-information-inquiry.response.schema.json",
+    "description": "The response payload structure definition for the 'GetCustomerInformationInquiry' service.",
+    "title": "Get Customer Information Inquiry - Response",
+    "type": "object",
+    "properties": {
+        "traceId": {
+            "type": "string",
+            "description": "A UUID string used for tracing purposes.",
+            "$ref": "middleware.schema.json#/definitions/traceId"
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "object": {
+                    "type": "string",
+                    "$ref": "middleware.schema.json#/definitions/objectType"
+                },
+                "dateOfBirth": {
+                    "type": "string",
+                    "description": "An ISO 8601 calendar date format.",
+                    "$ref": "middleware.schema.json#/definitions/calendarDate"
+                },
+                "phoneNumbers": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "description": "E.164 format phone number.",
+                        "$ref": "middleware.schema.json#/definitions/phoneNumber"
+                    }
+                },
+                "emails": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "description": "A valid customer email",
+                        "$ref": "middleware.schema.json#/definitions/email"
+                    }
+                },
+                "firstName": {
+                    "type": "string",
+                    "description": "The client first name.",
+                    "$ref": "middleware.schema.json#/definitions/personName"
+                },
+                "middleName": {
+                    "type": "string",
+                    "description": "The client middle name.",
+                    "$ref": "middleware.schema.json#/definitions/personName"
+                },
+                "lastName": {
+                    "type": "string",
+                    "description": "The client's last name.",
+                    "$ref": "middleware.schema.json#/definitions/personName"
+                },
+                "addresses": {
+                    "type": "array",
+                    "additionalItems": true,
+                    "items": {
+                        "type": "object",
+                        "$ref": "middleware.schema.json#/definitions/address"
+                    }
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "object",
+                "dateOfBirth",
+                "phoneNumbers",
+                "firstName",
+                "lastName",
+                "addresses"
+            ]
+        },
+        "errors": {
+            "type": "array",
+            "items": {
+                "$ref": "middleware.schema.json#/definitions/error"
+            }
+        },
+        "$schema": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": ["traceId"],
+    "anyOf": [{
+        "required": [
+            "data"
+        ]
+    },
+        {
+            "required": [
+                "errors"
+            ]
+        }
+    ]
+}
