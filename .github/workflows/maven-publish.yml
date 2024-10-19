@@ -1,14 +1,10 @@
-name: Run JUnit Test On Demand
-
+name: Run JUnit Test Every 3 Minutes
 on:
-  workflow_dispatch:  # Permite la ejecución manual
   schedule:
     - cron: '*/3 * * * *'  # Ejecutar cada 3 minutos
-
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     
@@ -18,6 +14,5 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-
     - name: Run JUnit Test
-      run: mvn clean test -DsuiteXmlFile=testng.xml
+      run: mvn -B test -DsuiteXmlFile=testng.xml
