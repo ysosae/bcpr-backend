@@ -9,6 +9,7 @@ import io.restassured.response.ResponseOptions;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.concurrent.*;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Test;
 import org.testng.Assert;
@@ -46,10 +47,8 @@ public class ProdGraphqlTest extends AbstractAPI {
         log.error(e.getMessage());
       }
       log.info("Response Success:" + response.statusCode());
-      Assert.assertEquals(
-          response.statusCode(),
-          200,
-          "Fail Service Login with Status Code " + response.statusCode());
+        Assert.assertTrue(
+                StringUtils.isNotEmpty(response.getBody().jsonPath().getString("data.login")), "Fail Login Services");
     } catch (NullPointerException e) {
       log.error("Path is invalid: " + e.getMessage());
     }
